@@ -1,0 +1,13 @@
+$fontArial12: normal 11px/1.2 Arial, Helvetica, sans-serif;
+
+@mixin signikaregular( $value ) {
+	font-family:"signikaregular";
+	font-size:$value;
+	line-height:1.1;
+	font-weight:normal;
+}
+
+/*COLOR*/
+$colorBlack:#000;
+$color171717:#171717;
+$colorWhite:#fff;
