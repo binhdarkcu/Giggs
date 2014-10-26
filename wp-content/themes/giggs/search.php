@@ -15,14 +15,15 @@
 			<main id="main" class="site-main" role="main">		
 				<?php
 					global $paged;
-					$args_blog = array(
-						'post_type' 	 => 'blogs',
-						'posts_per_page' =>  2 ,
-						'order'			 => 'asc',
-						'paged'		=> $paged
+					$search_query = array(
+						'post_type' 	 => array('blogs','post'),
+					    's' => $s,
+					    'posts_per_page' => 4,
+					    'paged' => $paged,
 					);
-					query_posts( $args_blog );
-					if(have_posts()): while(have_posts()): the_post();
+					
+					$wp_query = new WP_Query($search_query);
+					if ($wp_query-> have_posts() ) : while ( $wp_query->have_posts() ) :$wp_query-> the_post();
 	            	$url = wp_get_attachment_image_src( get_post_thumbnail_id(get_the_id()), 'large' );
 					//print_r($blog);
 					$cat = get_the_category(get_the_id());
@@ -48,7 +49,7 @@
 						</header><!-- end .entry-header -->
 				
 						<section class="entry-content">
-							<p><?php echo wp_trim_words(get_the_content(get_the_id()),47,'');?></p>
+							<p><?php echo wp_trim_words($blog->post_content,47,'');?></p>
 							<p> <a href="<?php echo get_the_permalink(get_the_id())?>" class="more-link">Continue reading <span class="meta-nav">&rarr;</span></a></p>
 						</section><!-- end .entry-content -->	
 						<section class="entry-meta">
@@ -63,7 +64,7 @@
 				
 				</article><!-- end #post-## -->
 				
-				<?php endwhile; endif;?>
+				<?php endwhile;?>
 				<nav role="navigation" id="nav-below" class="paging-navigation">
 					
 					<div class="nav-previous">
@@ -73,7 +74,12 @@
 						<?php previous_posts_link('Newer Posts <span class="meta-nav">&rarr;</span> ');?>		
 					</div>
 				</nav><!-- #nav-below -->
-		
+				<?php else:?>
+					<div class="entry-core">
+						<h3 class="page-title" style="color: #000;">Nothing Found.</h3>
+					<p>Sorry - nothing matched your search terms. Please try again with some different keywords.</p>	
+					</div>
+				<?php endif;?>
 			
 			</main><!-- end #main -->
 		</div><!-- end #primary -->

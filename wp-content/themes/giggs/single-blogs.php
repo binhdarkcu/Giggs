@@ -1,6 +1,6 @@
 <?php get_header('single');?>
 
-	<div id="content" class="site-content clearfix">
+	<div id="content" class="site-content clearfix page-blog">
 		<header class="page-header">
 			
 			<h1 class="page-title">

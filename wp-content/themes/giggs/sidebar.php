@@ -1,36 +1,47 @@
 <div id="sidebar" class="widget-area" role="complementary">
 		
 	<aside id="search-2" class="widget widget_search clearfix">
-		<form role="search" method="get" class="search-form" action="http://demo.pau1winslow.com/giggs/">
-			<label>
-				<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" title="Search for:">
-			</label>
-		</form>
-	</aside>		
+		<?php get_template_part('tpl','searchform');?>
+	</aside>
+	<?php
+		$args_blog = array(
+			'post_type' 	 => 'blogs',
+			'posts_per_page' =>  5 ,
+			'order'			 => 'asc'
+		);
+	?>		
 	<aside id="recent-posts-2" class="widget widget_recent_entries clearfix">		
 		<h3 class="widget-title">Recent Posts</h3>		
 		<ul>
+			<?php
+				$query_b = get_posts($args_blog);
+				foreach ( $query_b as $b ) {
+			?>
 			<li>
-				<a href="http://demo.pau1winslow.com/giggs/2014/09/05/donec-sed-odio-dui-nulla/">Donec sed odio dui nulla</a>
+				<a href="<?php echo get_the_permalink($b->ID);?>"><?php echo $b->post_name;?></a>
 			</li>
-			<li>
-				<a href="http://demo.pau1winslow.com/giggs/2014/09/05/nulla-vitae-elit-libero/">Nulla vitae elit libero</a>
-			</li>
-			<li>
-				<a href="http://demo.pau1winslow.com/giggs/2014/06/09/standard-post-with-all-the-trimmings/">Standard Post With All The Trimmings</a>
-			</li>
-			<li>
-				<a href="http://demo.pau1winslow.com/giggs/2014/06/09/the-art-of-simplicity/">The Art Of Simplicity</a>
-			</li>
+			<?php }?>
 		</ul>
 	</aside>
+	
+	<?php
+		$args_port = array(
+			'post_type' 	 => 'post',
+			'posts_per_page' =>  10 ,
+			'order'			 => 'asc'
+		);
+		$query_port = get_posts($args_port);
+	?>
 	<aside id="tag_cloud-2" class="widget widget_tag_cloud clearfix">
 		<h3 class="widget-title">Portfolio Skills</h3>
 		<div class="tagcloud">
-			<a href='http://demo.pau1winslow.com/giggs/portfolio_types/advertising/' class='tag-link-8' title='4 topics' style='font-size: 16pt;'>Advertising</a>
-			<a href='http://demo.pau1winslow.com/giggs/portfolio_types/branding/' class='tag-link-9' title='6 topics' style='font-size: 19pt;'>Branding</a>
-			<a href='http://demo.pau1winslow.com/giggs/portfolio_types/graphic-design/' class='tag-link-10' title='9 topics' style='font-size: 22pt;'>Graphic Design</a>
-			<a href='http://demo.pau1winslow.com/giggs/portfolio_types/photography/' class='tag-link-11' title='1 topic' style='font-size: 8pt;'>Photography</a>
+			<?php
+				foreach ( $query_port as $p) {
+				$cat = get_the_category($p->ID);
+				$category_link = get_category_link( $cat[0]->term_id );
+			?>
+			<a href='<?php echo $category_link;?>' class='tag-link-8' title='4 topics' style='font-size: 16pt;'><?php echo $cat[0]->cat_name;?></a>
+			<?php }?>
 		</div>
 	</aside>
 	<aside id="checkpoint_dribbble_shots-widget-2" class="widget checkpoint_dribbble_shots clearfix">

@@ -11,7 +11,7 @@
 	add_action( 'init', 'register_menu' );
 	
 	//add theme support
-	add_theme_support('post-thumbnails',array('post','page','services','portfolio'));
+	add_theme_support('post-thumbnails',array('post','page','services','portfolio','blogs'));
 
 	//register meta box
 	// Initialize the metabox class

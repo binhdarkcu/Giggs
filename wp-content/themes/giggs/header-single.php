@@ -35,7 +35,7 @@
 			<div id="header-primary" class="clearfix">
 
 				<section class="site-branding">
-					<a href="http://demo.pau1winslow.com/giggs/">
+					<a href="<?php bloginfo('home');?>">
 						<img src="http://localhost/PHP/BLISS/Yves/www/BE/wp-content/uploads/sites/8/2014/09/giggs.png" alt="Home" />
 					</a>
 				</section><!-- end .site-branding -->	

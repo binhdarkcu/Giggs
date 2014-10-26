@@ -26,7 +26,7 @@
 		$bgHome = get_option('theme_wptuts_options');
 	?>
     <style type='text/css'>
-		<?php if(!is_page('contact')){?>
+		<?php if(is_home()){?>
 		body {
 			background-image: url( <?php echo $bgHome['banner']?> );
 			background-repeat: no-repeat;
@@ -46,7 +46,7 @@
 			<div id="header-primary" class="clearfix">
 
 				<section class="site-branding">
-					<a href="http://demo.pau1winslow.com/giggs/">
+					<a href="<?php bloginfo('home');?>">
 						<img src="http://localhost/PHP/BLISS/Yves/www/BE/wp-content/uploads/sites/8/2014/09/giggs.png" alt="Home" />
 					</a>
 				</section><!-- end .site-branding -->	

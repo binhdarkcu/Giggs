@@ -29,11 +29,6 @@ $meta_boxes[] =array(
 			'name'             => 'Clients',
 			'id'               => "{$prefix}port_clients",
 			'type'             => 'wysiwyg'
-		),
-		array(
-			'name'             => 'Skills',
-			'id'               => "{$prefix}port_skills",
-			'type'             => 'wysiwyg'
 		)
 	 )
 );
