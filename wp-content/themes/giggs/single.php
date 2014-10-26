@@ -1,27 +1,37 @@
 <?php get_header('single');?>
-
+	<?php
+		while ( have_posts() ) : the_post();
+		$post = get_post(get_the_ID());
+		$smalltext = get_post_meta(get_the_ID(),'tt_port_smalltext',true); 
+		$description = get_post_meta(get_the_ID(),'tt_port_description',true);
+		$port_clients = get_post_meta(get_the_ID(),'tt_port_clients',true);
+		$port_skills = get_post_meta(get_the_ID(),'tt_port_skills',true);
+		$port_projectlink = get_post_meta(get_the_ID(),'tt_port_projectlink',true);
+		
+	?>
 	<div id="content" class="site-content clearfix">
 		<header class="page-header clearfix">
 	
 			<div class="single-portfolio-header">
 			
 				<h1 class="page-title">
-					Tamarindo			
+					<?php echo get_the_title($post->ID);?>			
 				</h1><!-- end .page-title -->
 	
 				<div class="page-description">
-					Optional description for each post. Nice!				
+					<?php echo $smalltext;?>
 				</div><!-- end .page-description -->
 				
 			</div><!-- end .single-portfolio-header -->
 	
 			<div class="single-portfolio-nav clearfix">
-				<span class="prev-project">
-					<a href="http://demo.pau1winslow.com/giggs/portfolio-items/lamantin-type/" rel="prev">
-						&larr; Lamantin Type
-					</a>
-				</span>
-				<span class="next-project"></span>
+				
+				<div class="prev-project link">
+					<?php previous_post('&larr; %','','yes'); ?>
+				</div>
+				<div class="next-project link">
+					<?php next_post('% &rarr;','  ','yes'); ?>
+				</div>
 			</div><!-- end .single-portfolio-nav -->
 	
 		</header><!-- end .page-header -->
@@ -33,34 +43,34 @@
 
 				
 			<div class="single-portfolio-media">
-				<img src="http://demo.pau1winslow.com/giggs/wp-content/uploads/sites/8/2014/09/2f388e50f441ac419a66b0e4f5d464e7.jpg" />
-		
-				<img src="http://demo.pau1winslow.com/giggs/wp-content/uploads/sites/8/2014/09/e6b5f1174ccc10eddb43624e231a6409.jpg" />
-		
-				<img src="http://demo.pau1winslow.com/giggs/wp-content/uploads/sites/8/2014/09/b926bff090e8723915f83fb8250ca014.jpg" />
-			
+				<?php echo get_the_content($post->ID);?>		
 			</div><!-- end .single-portfolio-media -->				
 			<div class="single-portfolio-detail clearfix">
 			
 				<div class="entry-content">
-					<p>Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id ultricies vehicula ut id elit. Integer posuere erat an ante <a href="#">venenatis dapibus posuere</a> velit aliquet. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur.</p>
+					<?php echo $description;?>
 				</div><!-- end .entry-content -->
 			
 				<div class="portfolio-meta">
 			
-								<span class="portfolio-meta-type">
-							Date				<span class="portfolio-meta-value">February 2014</span>
-						</span><!-- end .portfolio-meta-type -->
+					<span class="portfolio-meta-type">
+						Date				
+						<span class="portfolio-meta-value">
+							<?php the_time('F Y');?>
+						</span>
+					</span><!-- end .portfolio-meta-type -->
 					
-								<span class="portfolio-meta-type">
-							Client				<span class="portfolio-meta-value">Tamarindo</span>
-						</span><!-- end .portfolio-meta-type -->
+					<span class="portfolio-meta-type">
+						Client				
+						<span class="portfolio-meta-value"><?php echo $port_clients;?></span>
+					</span><!-- end .portfolio-meta-type -->
 					
-								<span class="portfolio-meta-type">
-							Skills									<span class="portfolio-meta-value">Graphic Design</span>
-										</span><!-- end .portfolio-meta-types -->
-					
-								<a href="#">Launch Project &rarr;</a>
+					<span class="portfolio-meta-type">
+						Skills									
+						<span class="portfolio-meta-value"><?php echo $port_skills;?></span>
+					</span><!-- end .portfolio-meta-types -->
+		
+					<a href="<?php if(!empty($port_projectlink)) echo $port_projectlink; else echo'javascript:void(0)';?>">Launch Project &rarr;</a>
 					
 				</div><!-- end .portfolio-meta -->
 			
@@ -68,5 +78,5 @@
 		</article><!-- end #post-## -->
 
 	</div><!-- end #content -->
-
+	<?php endwhile; ?>
 <?php get_footer();?>

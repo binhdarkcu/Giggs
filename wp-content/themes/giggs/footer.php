@@ -8,15 +8,19 @@
 			
 						<p class="icon-envelope contact-icon"></p>
 			
-						<p class="address">9 Decatur Street,<br />San Francisco CA 94103</p>
+						<p class="address">
+							<?php echo get_option('url_address');?>
+						</p>
 		
-						<p class="phone">+1 (415) 521-8775</p>
+						<p class="phone">
+							<?php echo get_option('url_phone');?>
+						</p>
 		
+						<p class="email"><?php echo get_option('url_email');?></p>
 		
-		
-						<p class="email">sanfran@giggsstudio.com</p>
-		
-						<p class="web"> <a href="#">wearegiggs.com</a></p>
+						<p class="web"> <a href="#">
+							<?php echo get_option('url_website');?>
+						</a></p>
 						
 					</div><!-- end .contact-info -->
 

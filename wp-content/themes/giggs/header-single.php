@@ -44,7 +44,11 @@
 
 			<div id="header-secondary">
 
-				<h3 id="header-tagline"> Made in San Francisco. +1 (415) 521-8775</h3>
+				<?php
+					$madein = get_option('url_madein');
+					$phone = get_option('url_phone');
+				?>
+				<h3 id="header-tagline"> <?php echo $madein.' '.$phone;?></h3>
 				
 				<a class="simple-menu" href="#sidr"></a>
 
@@ -52,34 +56,7 @@
 
 					<div id="sidr">
 
-						<nav id="site-navigation" class="main-navigation" role="navigation">
-
-							<ul id="primary-menu" class="sf-menu clearfix">
-								<li id="menu-item-318" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-231 current_page_item menu-item-318">
-									<a href="#">Home</a>
-								</li>
-								<li id="menu-item-323" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-323">
-									<a href="#">Services</a>
-								</li>
-								<li id="menu-item-316" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-316">
-									<a href="#">Portfolio</a>
-									<ul class="sub-menu">
-										<li id="" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-379">
-											<a href="#">Portfolio Classic</a>
-										</li>
-										<li id="" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-372">
-											<a href="#">Portfolio Full-Width</a>
-										</li>
-									</ul>
-								</li>
-								<li id="menu-item-319" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-319">
-									<a href="#">Blog</a>
-								</li>
-								<li id="menu-item-317" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-317">
-									<a href="#">Contact</a>
-								</li>
-							</ul>
-						</nav><!-- end #site-navigation -->	
+						<?php get_template_part('tpl','menu');?>
 
 					</div><!-- end #sidr -->
 
