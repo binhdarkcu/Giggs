@@ -56,7 +56,9 @@
 							<span class="meta-sep">/</span>
 							<a href="<?php echo $category_link;?>" rel="category tag"><?php echo $cat[0]->cat_name;?></a>
 							<span class="meta-sep">/</span>
-							<a href="<?php echo get_the_permalink(get_the_id())?>#comments" title="Comments on '<?php echo get_the_title(get_the_id());?>'">0 comments</a><span class="meta-sep">/</span>
+							<a href="<?php echo get_the_permalink(get_the_id())?>#comments" title="Comments on '<?php echo get_the_title(get_the_id());?>'">
+								<?php comments_number( '0 comment', '1 comment', '% comments' ); ?>.
+							</a><span class="meta-sep">/</span>
 							<a href="<?php echo get_the_permalink(get_the_id())?>" title="<?php echo get_the_title(get_the_id());?>">#</a>
 						</section><!-- end .entry-meta -->		
 					</div><!-- end .entry-core -->

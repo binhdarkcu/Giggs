@@ -32,7 +32,7 @@ function register_custom_post_blog() {
     'menu_position' => 5,  
     'menu_icon'	=> get_bloginfo('template_url').'/post-type/images/slider.jpg',
   	'taxonomies'		=> array('category'),
-    'supports' => array('title','editor','thumbnail'),
+    'supports' => array('title','editor','thumbnail','comments'),
     
   ); 
  register_post_type('blogs',$news);
