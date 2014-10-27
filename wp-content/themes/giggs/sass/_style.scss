@@ -70,3 +70,12 @@
    text-align: center;
  } 
 }
+
+.wpcf7 span[role="alert"]{
+  color:red;
+  display: block;
+  padding-top: 3px;
+}
+.wpcf7 .screen-reader-response{
+  display: none;
+}

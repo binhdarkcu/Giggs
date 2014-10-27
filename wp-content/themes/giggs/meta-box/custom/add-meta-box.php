@@ -33,7 +33,48 @@ $meta_boxes[] =array(
 	 )
 );
 
+$meta_boxes[] =array(
+   'id'=>'pages_meta',
+   'title'=>'Information',
+   'pages'=>array('page'),
+   'context' => 'normal',
+   'priority' => 'high',
+   'fields' => array(
+  		
+   		array(
+			'name'             => 'Introduce',
+			'id'               => "{$prefix}page_introduce",
+			'type'             => 'wysiwyg'
+		),
+		array(
+			'name'             => 'Small text',
+			'id'               => "{$prefix}page_smalltext",
+			'type'             => 'wysiwyg'
+		)
+	 )
+);
 
+
+$meta_boxes[] =array(
+   'id'=>'dribble_meta',
+   'title'=>'Information',
+   'pages'=>array('dribble-footer'),
+   'context' => 'normal',
+   'priority' => 'high',
+   'fields' => array(
+  		
+   		array(
+			'name'             => 'Image',
+			'id'               => "{$prefix}dribble_image",
+			'type'             => 'thickbox_image'
+		),
+		array(
+			'name'             => 'Link',
+			'id'               => "{$prefix}dribble_link",
+			'type'             => 'textarea'
+		)
+	 )
+);
 /**
  * Register meta boxes
  *

@@ -64,24 +64,24 @@
 						<p class="dribbble-line-icon icon-dribbble"></p>
 				
 						<ul class="dribbble-shots clearfix">
+							<?php
+								$args_dribble = array(
+									'post_type' 	 => 'dribble-footer',
+									'posts_per_page' =>  6 ,
+									'order'			 => 'asc'
+								);
+								$query_dribbles = get_posts($args_dribble);
+								foreach ( $query_dribbles as $dribble ) {
+								$img_id = get_post_meta( $dribble->ID, 'tt_dribble_image',true);  				
+								$img_url=wp_get_attachment_image_src( $img_id, 'full' );
+								$link = get_post_meta($dribble->ID, 'tt_dribble_link',true)
+							?>
 							<li class="dribbble-img"> 
-								<a href="https://dribbble.com/shots/1773311-Analytics-App" class="dribbble-link"><img src="https://d13yacurqjgara.cloudfront.net/users/168777/screenshots/1773311/analytics.jpg" alt="Analytics App"/></a> 
+								<a href="<?php echo $link;?>" target="_blank" class="dribbble-link">
+									<img src="<?php echo $img_url[0];?>" alt="Analytics App"/>
+								</a> 
 						 	</li><!-- end .dribbble-img -->
-						 	<li class="dribbble-img"> 
-								<a href="https://dribbble.com/shots/1763473-Tool-Tip" class="dribbble-link"><img src="https://d13yacurqjgara.cloudfront.net/users/168777/screenshots/1763473/dark_tool_tip.jpg" alt="Tool Tip"/></a> 
-						 	</li><!-- end .dribbble-img -->
-						 	<li class="dribbble-img"> 
-								<a href="https://dribbble.com/shots/1746277-8-FREE-Natural-iPhone-6-Mockups" class="dribbble-link"><img src="https://d13yacurqjgara.cloudfront.net/users/168777/screenshots/1746277/mockups.jpg" alt="8 FREE Natural iPhone 6 Mockups"/></a> 
-						 	</li><!-- end .dribbble-img -->
-						 	<li class="dribbble-img"> 
-								<a href="https://dribbble.com/shots/1740278-UltraLinx-Logo" class="dribbble-link"><img src="https://d13yacurqjgara.cloudfront.net/users/168777/screenshots/1740278/logo_colours.jpg" alt="UltraLinx Logo"/></a> 
-						 	</li><!-- end .dribbble-img -->
-						 	<li class="dribbble-img"> 
-								<a href="https://dribbble.com/shots/1735546-iPhone-6-News-App" class="dribbble-link"><img src="https://d13yacurqjgara.cloudfront.net/users/168777/screenshots/1735546/news_app.jpg" alt="iPhone 6 News App"/></a> 
-						 	</li><!-- end .dribbble-img -->
-						 	<li class="dribbble-img"> 
-								<a href="https://dribbble.com/shots/1731150-Blog-Magazine-Featured-Posts-Layout" class="dribbble-link"><img src="https://d13yacurqjgara.cloudfront.net/users/168777/screenshots/1731150/featured_posts.jpg" alt="Blog / Magazine Featured Posts Layout"/></a> 
-						 	</li><!-- end .dribbble-img -->
+						 	<?php }?>
 						 </ul><!-- end .dribbble-shots -->
 				
 					</aside>				
