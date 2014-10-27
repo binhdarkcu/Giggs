@@ -56,7 +56,10 @@
 
 					<div id="sidr">
 
-						<?php get_template_part('tpl','menu');?>
+						<nav id="site-navigation" class="main-navigation" role="navigation">
+							<?php get_template_part('tpl','menu');?>
+						
+						</nav><!-- end #site-navigation -->	
 
 					</div><!-- end #sidr -->
 

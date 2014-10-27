@@ -95,15 +95,7 @@
 
 			<nav id="footer-navigation">
 
-				<ul id="footer-menu" class="clearfix">
-					<li id="menu-item-321" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-231 current_page_item menu-item-321">
-						<a href="http://demo.pau1winslow.com/giggs/">Home</a>
-					</li>
-					<li id="menu-item-314" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-314"><a href="#">Privacy</a></li>
-					<li id="menu-item-320" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-320"><a href="http://demo.pau1winslow.com/giggs/blog/">Blog</a></li>
-					<li id="menu-item-315" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-315"><a href="#">Careers</a></li>
-					<li id="menu-item-322" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-322"><a href="http://demo.pau1winslow.com/giggs/contact/">Contact</a></li>
-				</ul>
+				<?php get_template_part('tpl','menu');?>
 			</nav><!-- end #site-navigation -->
 
 			<p class="copy">

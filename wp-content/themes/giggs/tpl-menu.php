@@ -1,4 +1,4 @@
-<nav id="site-navigation" class="main-navigation" role="navigation">
+
 	<?php
 
 	$nav = array(
@@ -15,5 +15,3 @@
 	wp_nav_menu( $nav );
 	
 	?>
-	
-</nav><!-- end #site-navigation -->	
