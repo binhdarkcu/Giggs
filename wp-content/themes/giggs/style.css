@@ -540,7 +540,7 @@ a.simple-menu {
 	text-align: center;
 	font-size: 20px;
 	line-height: 28px;
-	margin: 0 0 15px;
+	margin: 0 0 28px;
 }
 
 .main-navigation ul li:last-child {
@@ -1228,16 +1228,24 @@ a.tweet-user {
 }
 
 #credits {
-	padding: 80px 5%;
+	padding: 63px 5%;
 	text-align: center;
 	background: #000;
 }
 
 #credits a {
-	color: #fff;
-	border-color: #393735;
+	color: #ccc;
+	border-color: #808080;
+	font-size: 18px;	
 }
-
+#credits li:hover a{
+	color: #fff;
+	border-color: #fff;
+}
+#credits li.current_page_item a {
+	color: #fff;
+	border-color: #fff;
+}
 #footer-navigation {
 	text-align: center;
 }
@@ -1258,6 +1266,8 @@ a.tweet-user {
 
 .copy {
 	margin: 0;
+	font-size: 14px;
+	color: #ccc;
 }
 
 
@@ -1335,7 +1345,7 @@ a:active,
 #credits a:hover,
 .site-main [class*="navigation"] a:hover,
 .service .the-icon {
-	color: #3df5e1;
+	color: #fff;
 }
 
 a.tweet-user:hover {
@@ -1355,7 +1365,7 @@ textarea:focus,
 #footer input[type="password"]:focus,
 #footer input[type="search"]:focus,
 #footer textarea:focus {
-	border-color: #3df5e1;
+	border-color: #fff;
 }
 
 button:hover,

@@ -22,7 +22,8 @@
   #credits a:hover,
   .site-main [class*="navigation"] a:hover,
   .service .the-icon {
-    color: #58e8a0;
+    color: #fff;
+     
   }
 
   a.tweet-user:hover  {
@@ -70,7 +71,20 @@
    text-align: center;
  } 
 }
-
+.main-navigation ul li.current-menu-item a,
+.main-navigation ul li.current-menu-parent a{
+    text-decoration: underline;
+  }
+.main-navigation > ul > li > a{
+  color: #ccc;
+  display: inline-block;
+  font-size: 28px;
+  font-family: 'Rokkitt', serif;
+  &:hover{
+    text-decoration: underline;
+  }
+ 
+}
 .wpcf7 span[role="alert"]{
   color:red;
   display: block;
@@ -122,6 +136,9 @@ a.simple-menu{
   font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
+  &:hover{
+    text-decoration: none;
+  }
 }
 .registerPage{
   table{
@@ -146,11 +163,20 @@ a.simple-menu{
     }
     .workfor{
       width: 64%;
+      .txt{
+         font-family: 'Rokkitt', serif;
+         font-size: 32px;
+         color: #333333;
+         padding-top: 35px;
+         padding-bottom: 10px;
+      }
       ul{
         list-style-type:none;
         li{
           float: left;  
           margin-right: 22px;
+          padding: 0;
+          margin-bottom: 0;
           a{
             text-decoration: none;
             border: none;
@@ -162,7 +188,7 @@ a.simple-menu{
   #home-primary{
     .slide-text{
       background: transparent;
-      padding: 9% 8% 23%;
+      padding: 9% 8% 18%;
     }
   }
 }

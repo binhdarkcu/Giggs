@@ -66,7 +66,7 @@ $meta_boxes[] =array(
    		array(
 			'name'             => 'Image',
 			'id'               => "{$prefix}dribble_image",
-			'type'             => 'thickbox_image'
+			'type'             => 'image'
 		),
 		array(
 			'name'             => 'Link',

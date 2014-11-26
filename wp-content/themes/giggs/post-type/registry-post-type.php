@@ -79,12 +79,12 @@ function register_custom_post_services() {
 
 
 /*music*/
-//add_action( 'init', 'register_custom_post_dribble_footer' );
+add_action( 'init', 'register_custom_post_dribble_footer' );
 function register_custom_post_dribble_footer() {	
 	$news_label = array(
-    'name' => _x('Dribble Footer', 'Dribble Footer'),
+    'name' => _x('Work for', 'Work for'),
     'singular_name' => _x('dribble-footer', 'dribble-footer'),
-    'add_new' => _x('Add New', 'Dribble Footer'),
+    'add_new' => _x('Add New', 'Work for'),
     'add_new_item' => __('Add New'),
     'edit_item' => __('Edit '),
     'new_item' => __('Add New'),
@@ -94,7 +94,7 @@ function register_custom_post_dribble_footer() {
     'not_found' =>  __('Not Find'),
     'not_found_in_trash' => __('Not Find in Trash'), 
     'parent_item_colon' => '',
-    'menu_name' => 'Dribble Footer'
+    'menu_name' => 'Work for'
   );
   $news= array(
     'labels' => $news_label,

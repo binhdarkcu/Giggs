@@ -14,7 +14,7 @@
 	overflow-y: auto;
 	background: #000;
 	color: #fff;
-	padding-top: 60px;
+	padding-top: 122px;
 	text-align: center;
 }
 
@@ -57,7 +57,10 @@
 .sidr ul li { 
 	display: block;
 }
-
+.sidr ul li a.current-menu-parent {
+	color: #fff;
+	text-decoration: underline;
+}
 .sidr .copy {
 	color: #797979;
 }

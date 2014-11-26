@@ -11,14 +11,22 @@
 					<?php echo $textHome;?>
 				</div>
 				<div class="workfor">
+					<div class="txt">BRANDS WORKED FOR</div>
 					<ul>
-						<li><a href="#"><img src="assets/images/nivea.png"/></a></li>
-						<li><a href="#"><img src="assets/images/lexus.png"/></a></li>
-						<li><a href="#"><img src="assets/images/lewis.png"/></a></li>
-						<li><a href="#"><img src="assets/images/l-logo.png"/></a></li>
-						<li><a href="#"><img src="assets/images/schwepp.png"/></a></li>
-						<li><a href="#"><img src="assets/images/martini.png"/></a></li>
-						<li><a href="#"><img src="assets/images/microsoft.png"/></a></li>
+						<?php
+							$args_dribble = array(
+								'post_type' 	 => 'dribble-footer',
+								'posts_per_page' =>  8,
+								'order'			 => 'asc'
+							);
+							$query_dribbles = get_posts($args_dribble);
+							foreach ( $query_dribbles as $dribble ) {
+							$img_id = get_post_meta( $dribble->ID, 'tt_dribble_image',true);  				
+							$img_url=wp_get_attachment_image_src( $img_id, 'full' );
+							$link = get_post_meta($dribble->ID, 'tt_dribble_link',true)
+						?>
+						<li><a href="<?php echo $link;?>"><img src="<?php echo $img_url[0];?>"/></a></li>
+						<?php }?>
 					</ul>
 				</div>
 				

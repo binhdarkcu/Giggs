@@ -15,7 +15,7 @@
 
 		</div><!-- end #credits -->
 
-	</footer><!-- end #footer -->
+</footer><!-- end #footer -->
 
 </div><!-- end #page -->
 <script type='text/javascript' src='assets/js/jquery.js'></script>
