@@ -1,6 +1,6 @@
 <?php
 /*slider*/
-add_action( 'init', 'register_custom_post_blog' );
+//add_action( 'init', 'register_custom_post_blog' );
 function register_custom_post_blog() {	
 	$news_label = array(
     'name' => _x('Blogs', 'Blogs'),
@@ -79,7 +79,7 @@ function register_custom_post_services() {
 
 
 /*music*/
-add_action( 'init', 'register_custom_post_dribble_footer' );
+//add_action( 'init', 'register_custom_post_dribble_footer' );
 function register_custom_post_dribble_footer() {	
 	$news_label = array(
     'name' => _x('Dribble Footer', 'Dribble Footer'),

@@ -47,18 +47,14 @@
 
 				<section class="site-branding">
 					<a href="<?php bloginfo('home');?>">
-						<img src="http://localhost/PHP/BLISS/Yves/www/BE/wp-content/uploads/sites/8/2014/09/giggs.png" alt="Home" />
+						<img src="assets/images/logo.jpg" alt="Home" />
 					</a>
 				</section><!-- end .site-branding -->	
 
 			</div><!-- end #header-primary -->
 
 			<div id="header-secondary">
-				<?php
-					$madein = get_option('url_madein');
-					$phone = get_option('url_phone');
-				?>
-				<h3 id="header-tagline"> <?php echo $madein.' '.$phone;?></h3>
+				
 				
 				<a class="simple-menu" href="#sidr">Menu</a>
 
