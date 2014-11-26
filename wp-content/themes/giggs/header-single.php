@@ -36,7 +36,7 @@
 
 				<section class="site-branding">
 					<a href="<?php bloginfo('home');?>">
-						<img src="assets/images/logo.jpg" alt="Home" />
+						<img src="assets/images/logo.png" alt="Home" />
 					</a>
 				</section><!-- end .site-branding -->	
 

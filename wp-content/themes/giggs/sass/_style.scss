@@ -86,6 +86,27 @@
     padding:0;
     
   }
+  h3{
+    font-family: 'Rokkitt', serif;
+    letter-spacing: 0;
+    font-size: 3.154em; 
+    line-height: 1;
+    margin-bottom: 0.500em;
+    color: #323232;
+    text-transform: none;
+  }
+  .text{
+   
+    p{
+      font-size: 1.385em;
+      line-height: 1;
+      color: #000;
+    }
+  }
+  .pad{
+     text-align: left;
+    padding: 8%;
+  }
 }
 .page-title{
   margin-bottom: 0;
@@ -94,10 +115,12 @@
   }
 }
 a.simple-menu{
-  padding-right: 56px;
+  padding-right: 68px;
   color: #000;
   background-position: right center;
-  font-size: 19px;
+  font-family: 'Rokkitt', serif;
+  font-size: 20px;
+  font-weight: 700;
   text-transform: uppercase;
 }
 .registerPage{
@@ -107,6 +130,39 @@ a.simple-menu{
         padding-bottom: 10px;  
       }
       
+    }
+  }
+}
+.home {
+  .slide-text{
+    width: 50%;
+    .txt-home{
+      font-family: 'Rokkitt', serif;
+      font-size: 72px;
+      color: #333333;
+      letter-spacing: 0;
+      line-height: 58px;
+      
+    }
+    .workfor{
+      width: 64%;
+      ul{
+        list-style-type:none;
+        li{
+          float: left;  
+          margin-right: 22px;
+          a{
+            text-decoration: none;
+            border: none;
+          }
+        }
+      }
+    }
+  }
+  #home-primary{
+    .slide-text{
+      background: transparent;
+      padding: 9% 8% 23%;
     }
   }
 }

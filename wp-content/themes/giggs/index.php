@@ -4,14 +4,23 @@
 	
 		<div id="home-primary" class="clearfix">
 			<div class="slide-text">
-				<?php
-					$textHome = get_option('text_for_homepage')
-				?>
-				<h1>
+				<div class="txt-home">
+					<?php
+						$textHome = get_option('text_for_homepage');
+					?>	
 					<?php echo $textHome;?>
-				</h1>
-
-				<a class="slide-cta" href="#">What&#039;s your story?</a>
+				</div>
+				<div class="workfor">
+					<ul>
+						<li><a href="#"><img src="assets/images/nivea.png"/></a></li>
+						<li><a href="#"><img src="assets/images/lexus.png"/></a></li>
+						<li><a href="#"><img src="assets/images/lewis.png"/></a></li>
+						<li><a href="#"><img src="assets/images/l-logo.png"/></a></li>
+						<li><a href="#"><img src="assets/images/schwepp.png"/></a></li>
+						<li><a href="#"><img src="assets/images/martini.png"/></a></li>
+						<li><a href="#"><img src="assets/images/microsoft.png"/></a></li>
+					</ul>
+				</div>
 				
 			</div><!-- end .slide-text -->
 		</div><!-- end #home-primary -->

@@ -22,16 +22,18 @@
 		<div id="services" class="clearfix">
 			
 				<div class="service">
-					<h3>
-						Kiokarma is a man design studio. A good one
-					</h3>		
-					<div class="text">
-						<p>
-							More than anything else, I'm a creative. I get to the score of what you - or your business - are about, and deliver you the media  that puts the best of it on display.
-						</p>
-						<p>
-							I primarily design logos, idenlities and websites but i'm always up for it challenge and never limit my creativity through a medium or technology.
-						</p>
+					<div class="pad">
+						<h3>
+							Kiokarma is a man design studio. A good one
+						</h3>		
+						<div class="text">
+							<p>
+								More than anything else, I'm a creative. I get to the score of what you - or your business - are about, and deliver you the media  that puts the best of it on display.
+							</p>
+							<p>
+								I primarily design logos, idenlities and websites but i'm always up for it challenge and never limit my creativity through a medium or technology.
+							</p>
+						</div>
 					</div>
 				</div><!-- end .service -->
 	
@@ -47,31 +49,34 @@
 	
 			
 				<div class="service">
-	
-					<div class="text">
-						<p>
-							More than anything else, I'm a creative. I get to the score of what you - or your business - are about, and deliver you the media  that puts the best of it on display.
-						</p>
-						<p>
-							I primarily design logos, idenlities and websites but i'm always up for it challenge and never limit my creativity through a medium or technology.
-						</p>
+					<div class="pad">
+						<div class="text">
+							<p>
+								More than anything else, I'm a creative. I get to the score of what you - or your business - are about, and deliver you the media  that puts the best of it on display.
+							</p>
+							<p>
+								I primarily design logos, idenlities and websites but i'm always up for it challenge and never limit my creativity through a medium or technology.
+							</p>
+						</div>
 					</div>
 				</div><!-- end .service -->
 	
 			
 				<div class="service">
-					<div class="text">
-						<p>
-							More than anything else, I'm a creative. I get to the score of what you - or your business - are about, and deliver you the media  that puts the best of it on display.
-						</p>
-						<p>
-							I primarily design logos, idenlities and websites but i'm always up for it challenge and never limit my creativity through a medium or technology.
-						</p>
+					<div class="pad">
+						<div class="text">
+							<p>
+								More than anything else, I'm a creative. I get to the score of what you - or your business - are about, and deliver you the media  that puts the best of it on display.
+							</p>
+							<p>
+								I primarily design logos, idenlities and websites but i'm always up for it challenge and never limit my creativity through a medium or technology.
+							</p>
+						</div>
 					</div>
 				</div><!-- end .service -->
 	
 			
-				<div class="service hasImg">
+				<div class="service hasImg">	
 					<img src="assets/images/ab-3.jpg"/>
 				</div><!-- end .service -->
 	

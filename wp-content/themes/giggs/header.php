@@ -27,10 +27,12 @@
 	?>
     <style type='text/css'>
 		<?php if(is_home()){?>
-		body {
+		body #home-primary {
 			background-image: url( <?php echo $bgHome['banner']?> );
 			background-repeat: no-repeat;
 			background-attachment: fixed;
+			background-position: right 88px;
+			background-size: cover;
 		}
 		<?php }	?>
 	</style>
@@ -47,7 +49,7 @@
 
 				<section class="site-branding">
 					<a href="<?php bloginfo('home');?>">
-						<img src="assets/images/logo.jpg" alt="Home" />
+						<img src="assets/images/logo.png" alt="Home" />
 					</a>
 				</section><!-- end .site-branding -->	
 
