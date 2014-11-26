@@ -21,11 +21,15 @@ var siteMain = (function() {
 	}
 	//RETURN
 	return {
-		init:init
+		init:init,
+		responsiveAbout:responsiveAbout
 	}
 	
 })();	
 
 jQuery(document).ready(function(){
+	siteMain.init();
+});
+jQuery(window).load(function(){
 	siteMain.init();
 });

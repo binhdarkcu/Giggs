@@ -33,6 +33,9 @@
 	include 'inc/login.php';
 	//register
 	include 'inc/register.php';
+
+	//register
+	require_once( get_template_directory() . '/inc/custom-ajax-auth.php' );
 	//credits funciton
 	//include 'inc/load_credits.php';
 	function get_page_id_by_slug($slug){

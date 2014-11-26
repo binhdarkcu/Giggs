@@ -1,4 +1,5 @@
 <?php
+//use ajax
 add_action( 'wp_ajax_sub_register', 'tt_ajax_sub_register' );
 add_action( 'wp_ajax_nopriv_sub_register', 'tt_ajax_sub_register' );
 
@@ -34,3 +35,4 @@ function tt_ajax_sub_register(){
 		
 	}
 }
+
