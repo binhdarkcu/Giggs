@@ -60,7 +60,7 @@
 				?>
 				<h3 id="header-tagline"> <?php echo $madein.' '.$phone;?></h3>
 				
-				<a class="simple-menu" href="#sidr"></a>
+				<a class="simple-menu" href="#sidr">Menu</a>
 
 				<div id="sidr-containr">
 

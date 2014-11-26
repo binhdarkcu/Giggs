@@ -21,68 +21,58 @@
 	
 		<div id="services" class="clearfix">
 			
-			
 				<div class="service">
-					<p class="the-icon icon-desktop"></p>
-					<h3 class="service-title">
-						WordPress Themes				
-					</h3><!-- end .service-title -->
-					Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec non vestibulum urna, pellentesque congue leo. Proin a leo eu tortor gravida rhoncus.
+					<h3>
+						Kiokarma is a man design studio. A good one
+					</h3>		
+					<div class="text">
+						<p>
+							More than anything else, I'm a creative. I get to the score of what you - or your business - are about, and deliver you the media  that puts the best of it on display.
+						</p>
+						<p>
+							I primarily design logos, idenlities and websites but i'm always up for it challenge and never limit my creativity through a medium or technology.
+						</p>
+					</div>
+				</div><!-- end .service -->
+	
+			
+				<div class="service hasImg">
+					<img src="assets/images/ab-1.jpg"/>
+				</div><!-- end .service -->
+	
+			
+				<div class="service hasImg">
+					<img src="assets/images/ab-2.jpg"/>
 				</div><!-- end .service -->
 	
 			
 				<div class="service">
 	
-					<p class="the-icon icon-tools"></p>
-	
-					<h3 class="service-title">
-						Identity Design				</h3><!-- end .service-title -->
-	
-					Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec non vestibulum urna, pellentesque congue leo. Proin a leo eu tortor gravida rhoncus.
+					<div class="text">
+						<p>
+							More than anything else, I'm a creative. I get to the score of what you - or your business - are about, and deliver you the media  that puts the best of it on display.
+						</p>
+						<p>
+							I primarily design logos, idenlities and websites but i'm always up for it challenge and never limit my creativity through a medium or technology.
+						</p>
+					</div>
 				</div><!-- end .service -->
 	
 			
 				<div class="service">
-	
-					<p class="the-icon icon-documents"></p>
-	
-					<h3 class="service-title">
-						Editorial Design				</h3><!-- end .service-title -->
-	
-					Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec non vestibulum urna, pellentesque congue leo. Proin a leo eu tortor gravida rhoncus.
+					<div class="text">
+						<p>
+							More than anything else, I'm a creative. I get to the score of what you - or your business - are about, and deliver you the media  that puts the best of it on display.
+						</p>
+						<p>
+							I primarily design logos, idenlities and websites but i'm always up for it challenge and never limit my creativity through a medium or technology.
+						</p>
+					</div>
 				</div><!-- end .service -->
 	
 			
-				<div class="service">
-	
-					<p class="the-icon icon-camera"></p>
-	
-					<h3 class="service-title">
-						Photography				</h3><!-- end .service-title -->
-	
-					Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec non vestibulum urna, pellentesque congue leo. Proin a leo eu tortor gravida rhoncus.
-				</div><!-- end .service -->
-	
-			
-				<div class="service">
-	
-					<p class="the-icon icon-facebook"></p>
-	
-					<h3 class="service-title">
-						Social Marketing				</h3><!-- end .service-title -->
-	
-					Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec non vestibulum urna, pellentesque congue leo. Proin a leo eu tortor gravida rhoncus.
-				</div><!-- end .service -->
-	
-			
-				<div class="service">
-	
-					<p class="the-icon icon-genius"></p>
-	
-					<h3 class="service-title">
-						Rocket Science				</h3><!-- end .service-title -->
-	
-					Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec non vestibulum urna, pellentesque congue leo. Proin a leo eu tortor gravida rhoncus.
+				<div class="service hasImg">
+					<img src="assets/images/ab-3.jpg"/>
 				</div><!-- end .service -->
 	
 			

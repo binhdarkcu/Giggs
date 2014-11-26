@@ -9,10 +9,10 @@
 	top: 0;
 	height: 100%;
 	z-index: 999999;
-	width: 600px;
+	width: 40%;
 	overflow-x: none;
 	overflow-y: auto;
-	background: rgba( 0, 0, 0, 0.9 );
+	background: #000;
 	color: #fff;
 	padding-top: 60px;
 	text-align: center;
@@ -41,7 +41,7 @@
 
 .sidr.right {
 	left: auto;
-	right: -600px
+	right: -40%;
 }
 
 .sidr.left { 

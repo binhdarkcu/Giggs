@@ -29,7 +29,10 @@
 	
 	//change label post
 	include 'inc/change_label_post.php';
-	
+	//login
+	include 'inc/login.php';
+	//register
+	include 'inc/register.php';
 	//credits funciton
 	//include 'inc/load_credits.php';
 	function get_page_id_by_slug($slug){
