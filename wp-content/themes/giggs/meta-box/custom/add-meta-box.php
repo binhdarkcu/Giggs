@@ -13,13 +13,9 @@ $meta_boxes[] =array(
   		array(
 			'name'             => 'Small text',
 			'id'               => "{$prefix}port_smalltext",
-			'type'             => 'text'
-		),
-		array(
-			'name'             => 'Project Link',
-			'id'               => "{$prefix}port_projectlink",
 			'type'             => 'textarea'
 		),
+		
    		array(
 			'name'             => 'Description',
 			'id'               => "{$prefix}port_description",
@@ -29,6 +25,16 @@ $meta_boxes[] =array(
 			'name'             => 'Clients',
 			'id'               => "{$prefix}port_clients",
 			'type'             => 'wysiwyg'
+		),
+		array(
+			'name'             => 'Project',
+			'id'               => "{$prefix}port_projects",
+			'type'             => 'wysiwyg'
+		),
+		array(
+			'name'             => 'Launch Project',
+			'id'               => "{$prefix}port_projectlink",
+			'type'             => 'textarea'
 		)
 	 )
 );

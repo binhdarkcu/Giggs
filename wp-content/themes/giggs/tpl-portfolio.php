@@ -20,6 +20,7 @@
 	
 					<a href="<?php echo get_the_permalink($portfolio->ID);?>">
 						<span class="portfolio-thumb-overlay">
+							<div class="overlays"></div>
 							<div class="overlay-inner">
 								<h1><?php echo get_the_title($portfolio->ID);?><br /><span>View Project</span></h1>
 							</div><!-- end .overlay-inner -->

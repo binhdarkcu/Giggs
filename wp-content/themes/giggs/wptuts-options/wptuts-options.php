@@ -101,14 +101,15 @@
       if ( !empty($_POST) && wp_verify_nonce($_POST['social_option'],'social_option') )
       {
       	
-      		update_option( 'url_madein',($_POST['url_madein']));
           	update_option( 'url_address',($_POST['url_address']));
 			update_option( 'url_phone',($_POST['url_phone']));
 			update_option( 'url_email',($_POST['url_email']));
-			update_option( 'url_website',($_POST['url_website']));
-      		update_option( 'url_facebook',($_POST['url_facebook']));
-      		update_option( 'url_youtube',($_POST['url_youtube']));
-      		update_option( 'url_iframe',($_POST['url_iframe']));
+			update_option( 'url_vine',($_POST['url_vine']));
+      		update_option( 'url_be',($_POST['url_be']));
+      		update_option( 'url_linkin',($_POST['url_linkin']));
+      		update_option( 'url_flickr',($_POST['url_flickr']));
+			update_option( 'url_skype',($_POST['url_skype']));
+			
     ?>
       		<div id="index_message" name="index_message" class="updated" style="display:table;width: 100%;margin-bottom: 0;">Update successful!</div><br/>
       		<?php
@@ -118,10 +119,6 @@
 	    	<!--Footer-->
 	       <div class="tab_content tab_social" style="display:block;">
 	       		<form action="" method="post" id="theme_option_search">
-	       			
-	       			 <label for="url_madein">Made in</label><br/>
-	                   <input name="url_madein" size="65" style="border-style:inset;border-width: 2px;color: #000;background-color: #f1f1f1" value="<?php echo esc_attr( get_option('url_madein') ); ?>"/><br /><br />
-	       			 
 	       			 <label for="url_address">Address</label><br/>
 	                   <input name="url_address" size="65" style="border-style:inset;border-width: 2px;color: #000;background-color: #f1f1f1" value="<?php echo esc_attr( get_option('url_address') ); ?>"/><br /><br />
 	       			 <!--title fr-->
@@ -132,21 +129,24 @@
 	                   <input name="url_email" size="65" style="border-style:inset;border-width: 2px;color: #000;background-color: #f1f1f1" value="<?php echo esc_attr( get_option('url_email') ); ?>"/><br /><br />
 	       			 <!--title fr-->
 	       			 
-	       			 <label for="url_email">Website</label><br/>
-	                   <input name="url_website" size="65" style="border-style:inset;border-width: 2px;color: #000;background-color: #f1f1f1" value="<?php echo esc_attr( get_option('url_website') ); ?>"/><br /><br />
+	       			 <label for="url_vine">Vine social</label><br/>
+	                   <input name="url_vine" size="65" style="border-style:inset;border-width: 2px;color: #000;background-color: #f1f1f1" value="<?php echo esc_attr( get_option('url_vine') ); ?>"/><br /><br />
 	       			 
-	              	   <label for="url_facebook">Link Facebook</label><br/>
-	                   <input name="url_facebook" size="65" style="border-style:inset;border-width: 2px;color: #000;background-color: #f1f1f1" value="<?php echo esc_attr( get_option('url_facebook') ); ?>"/><br /><br />
+	              	   <label for="url_be">Be social</label><br/>
+	                   <input name="url_be" size="65" style="border-style:inset;border-width: 2px;color: #000;background-color: #f1f1f1" value="<?php echo esc_attr( get_option('url_be') ); ?>"/><br /><br />
 	                
 	                 <!--Summary fr-->
-	                   <label for="url_youtube">Link Youtube</label><br/>
-	                   <input name="url_youtube" size="65" style="border-style:inset;border-width: 2px;color: #000;background-color: #f1f1f1" value="<?php echo esc_attr( get_option('url_youtube') ); ?>"/><br /><br />
+	                   <label for="url_linkin">Linkin</label><br/>
+	                   <input name="url_linkin" size="65" style="border-style:inset;border-width: 2px;color: #000;background-color: #f1f1f1" value="<?php echo esc_attr( get_option('url_linkin') ); ?>"/><br /><br />
 	                   
 	                 <!--Summary fr-->
-	                   <label for="url_iframe">Iframe url</label><br/>
-	                   <input name="url_iframe" size="65" style="border-style:inset;border-width: 2px;color: #000;background-color: #f1f1f1" value="<?php echo esc_attr( get_option('url_iframe') ); ?>"/><br /><br />	
+	                   <label for="url_flickr">Flickr social</label><br/>
+	                   <input name="url_flickr" size="65" style="border-style:inset;border-width: 2px;color: #000;background-color: #f1f1f1" value="<?php echo esc_attr( get_option('url_flickr') ); ?>"/><br /><br />	
 	                    <!--Summary fr-->
-	                
+	                <!--Summary fr-->
+	                   <label for="url_skype">Skype</label><br/>
+	                   <input name="url_skype" size="65" style="border-style:inset;border-width: 2px;color: #000;background-color: #f1f1f1" value="<?php echo esc_attr( get_option('url_skype') ); ?>"/><br /><br />	
+	                    <!--Summary fr-->
 	                   <input type="submit" name="footer_submit" value="Update" style="" class="button-primary"/>
 	                   
 	            

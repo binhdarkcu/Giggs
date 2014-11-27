@@ -485,6 +485,7 @@ a:visited {
 
 .site-branding img {
 	display: block;
+	max-width: inherit;
 }
 
 #header-secondary {
@@ -730,19 +731,23 @@ a.simple-menu {
 }
 
 .page-title {
-	font-size: 36px;
+	font-size: 50px;
 	line-height: 40px;
+	font-family: 'Rokkitt', serif;
+    letter-spacing: 0;
 	margin: 0 0 5px;
 	color: #fff;
 }
 
 .page-description {
-	font-size: 22px;
+	font-size: 24px;
 	line-height: 30px;
 	font-family: 'Rokkitt', serif;
-	color: #9a9a9a;
+	color: #999;
 }
-
+.page-description p{
+	margin-bottom: 0px;
+}
 /* Homepage */
 .slide-text {
 	width: 30%;
@@ -780,16 +785,17 @@ a.slide-cta {
 
 /* Single Portfolio Posts */
 .single-portfolio-items .page-header {
-	padding: 110px 5%;
+	padding: 75px 5%;
 }
 
 .single-portfolio-header {
 	float: left;
+	width: 100%;
 }
 
 .single-portfolio-nav {
 	float: right;
-	padding: 25px 0 0;
+	padding: 45px 0 0;
 }
 
 .single-portfolio-nav span {
@@ -804,14 +810,30 @@ a.slide-cta {
 .single-portfolio-nav .prev-project {
 	float: left;
 	text-align: left;
-	margin: 0 30px 0 0;
+	margin: 0 80px 0 0;
+	color: #c0c5c5;
+	font-size: 12px;
 }
-
+.single-portfolio-nav .prev-project a{
+	text-decoration: underline;
+	background: url(assets/images/prev.png) no-repeat left center;
+	padding-left: 22px;
+}
+.single-portfolio-nav a{
+	font-size: 20px;
+	color: #ccc;
+}
 .single-portfolio-nav .next-project {
 	float: right;
 	text-align: right;
+	color: #c0c5c5;
+	font-size: 12px;
 }
-
+.single-portfolio-nav .next-project a{
+	text-decoration: underline;
+	background: url(assets/images/next.png) no-repeat right center;
+	padding-right: 22px;
+}
 .single-portfolio-media {
 	width: 70%;
 	float: left;
@@ -822,7 +844,27 @@ a.slide-cta {
 	float: right;
 	padding: 4%;
 }
-
+.single-portfolio-detail.single-right .entry-content p, .single-portfolio-detail.single-right .portfolio-meta-value{
+	font-size: 20px;
+	color: #666;
+	line-height: 22px;
+}
+.single-portfolio-detail.single-right a.launch{
+	color: #000;
+	font-size: 20px;
+	border: none;
+	text-decoration: underline;
+	background: url(assets/images/launch.png) no-repeat right center;
+	padding-right: 25px;
+}
+.single-portfolio-detail.single-right a.launch:hover{
+	color: #000;
+	
+}
+.single-portfolio-detail.single-right .portfolio-meta span.portfolio-meta-type{
+	color: #333;
+	font-size: 20px;
+}
 .single-portfolio-detail span {
 	display: block;
 }
@@ -914,7 +956,7 @@ span.portfolio-meta-value {
 #services .service:nth-child(8),
 #services .service:nth-child(9),
 #services .service:nth-child(12) {
-	background: #fafafa;
+	background: #eee;
 }
 
 

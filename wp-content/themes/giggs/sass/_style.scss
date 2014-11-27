@@ -52,13 +52,31 @@
   input[type="submit"]:hover,
   .tagcloud a:hover,
   #footer .tagcloud a:hover,
-  .portfolio-thumb-overlay,
   .flex-control-paging li a.flex-active,
   .flex-control-paging li a.flex-active:hover {
-    background: #58e8a0;
+    background: #000;
+    opacity: 0.65;
+    filter: alpha(opacity=65);
   }
-
-
+  .portfolio-thumb-overlay{
+    background: transparent;
+  }
+  .portfolio-thumb-overlay h1{
+    font-size: 40px;
+    font-family: 'Rokkitt', serif;
+    letter-spacing: 0;
+  }
+  .portfolio-thumb-overlay .overlays{
+    background: #000;
+    opacity: 0.65;
+    filter: alpha(opacity=65);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  .overlay-inner{
+    position: relative;
+  }
   .single-portfolio-nav{
     .link{
       a{
@@ -93,9 +111,18 @@
 .wpcf7 .screen-reader-response{
   display: none;
 }
+.aboutPage{
+  background: #eee;
+  a{
+    color: #333;
+    border: none;
+    text-decoration: underline;
+  }
+}
 #services .service{
   width: 50%;
   padding: 0;
+   background: #eee;
   &.hasImg{
     padding:0;
     
@@ -103,23 +130,42 @@
   h3{
     font-family: 'Rokkitt', serif;
     letter-spacing: 0;
-    font-size: 3.154em; 
-    line-height: 1;
-    margin-bottom: 0.500em;
-    color: #323232;
+    font-size: 3.077em; 
+    line-height: 0.9em;
+    margin-bottom: 0.700em;
+    color: #333;
     text-transform: none;
   }
   .text{
    
-    p{
-      font-size: 1.385em;
-      line-height: 1;
-      color: #000;
+    div{
+      padding: 0;
+      padding-bottom: 1.2em;
+      font-size: 1.538em;
+      line-height: 1.1;
+      color: #666;
     }
   }
   .pad{
      text-align: left;
     padding: 8%;
+  }
+  &.service-3{
+   p{ text-align: center;}
+    p.line-1{
+      font-size: 20px;
+      color: #000;
+    }
+    span{
+      display: block;
+    }
+    p.line-2{
+      font-size: 20px;
+      color: #666;
+      a{
+        color: #333;
+      }
+    }
   }
 }
 .page-title{
@@ -162,7 +208,7 @@ a.simple-menu{
       
     }
     .workfor{
-      width: 64%;
+      width: 450px;
       .txt{
          font-family: 'Rokkitt', serif;
          font-size: 32px;
@@ -194,7 +240,7 @@ a.simple-menu{
 }
 #sidebar{
   position: relative;
-  padding: 5% 3%;
+  padding: 5.5% 3%;
   .bgwhite{
     background: #fff;
     position: absolute;
@@ -206,15 +252,74 @@ a.simple-menu{
   .contactDetail{
     position: relative;
     .row{
-      padding-bottom: 28px;
+      padding-bottom: 22px;
     }
     h3{
       margin-bottom: 0;
       color: #666;
-      font-size: 18px;
+      font-size: 20px;
       font-family: 'Rokkitt', serif;
       line-height: 17px;
       letter-spacing: 0px;
+    }
+    a{
+      color: #333;
+      border: none;
+      font-size: 20px;
+      text-decoration: underline;
+      &:hover{
+        text-decoration: none;
+      }
+    }
+    span{
+      color: #333;
+      font-size: 20px;
+    }
+    .rowSocial{
+      ul{
+        list-style-type:none;
+        padding-top: 9px;
+        li{
+          display: inline-block;
+          margin-right: 4px;
+          a{
+            width: 32px;
+            height: 32px;
+            display: block;
+            &.linkv{
+              background: url(../assets/images/link-v.png) no-repeat;
+              &:hover{
+                background: url(../assets/images/link-v-hover.png) no-repeat;
+              }
+            }
+            &.linkbe{
+              background: url(../assets/images/link-be.png) no-repeat;
+              &:hover{
+                background: url(../assets/images/link-be-hover.png) no-repeat;
+              }
+            } 
+            &.linkin{
+              background: url(../assets/images/link-in.png) no-repeat;
+               &:hover{
+                background: url(../assets/images/link-in-hover.png) no-repeat;
+              }
+            } 
+            &.linkflickr{
+              background: url(../assets/images/link-dot.png) no-repeat;
+              &:hover{
+                background: url(../assets/images/link-dot-hover.png) no-repeat;
+              }
+            } 
+            &.linkskype{
+              background: url(../assets/images/link-skype.png) no-repeat;
+               &:hover{
+                background: url(../assets/images/link-skype-hover.png) no-repeat;
+              }
+            }   
+          }
+          
+        }
+      }
     }
   }
 }
@@ -224,11 +329,29 @@ a.simple-menu{
 .contactPage{
   .content-area{
     h4{
-      font-size: 18px;
+      font-size: 20px;
       text-transform: none;
       font-family: 'Rokkitt', serif;
       letter-spacing: 0;
       margin-bottom: 0;
+      color: #333;
+    }
+    p{
+      font-size: 20px;
+      line-height: 23px;
+    }
+    .row{
+      margin-bottom: 22px;
+    }
+    span.lb{
+      text-transform: uppercase;
+      font-size: 20px;
+      padding-bottom: 3px;
+    }
+    span.star{
+      font-size: 13px;
+      top: -5px;
+      position: relative;
     }
     .col-1{
       float: left;
@@ -245,6 +368,21 @@ a.simple-menu{
         width: 95%;
       }
     }
+    textarea{
+      margin-top: 3px;
+    }
+  }
+  p.areaRow{
+    margin-bottom: 28px;
+  }
+  input[type="submit"]{
+    font-size: 20px;
+    font-family: 'Rokkitt', serif;
+    background: url(../assets/images/arr.png) no-repeat 22px center #333;
+    color: #fff;
+    text-transform: uppercase;
+     padding: 0 22px 0 40px;
+     line-height: 48px;
   }
 }
 

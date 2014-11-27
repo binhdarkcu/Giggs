@@ -7,7 +7,7 @@
 		$port_clients = get_post_meta(get_the_ID(),'tt_port_clients',true);
 		$port_skills = get_post_meta(get_the_ID(),'tt_port_skills',true);
 		$port_projectlink = get_post_meta(get_the_ID(),'tt_port_projectlink',true);
-		
+		$port_projects = get_post_meta(get_the_ID(),'tt_port_projects',true);
 	?>
 	<div id="content" class="site-content clearfix">
 		<header class="page-header clearfix">
@@ -27,10 +27,10 @@
 			<div class="single-portfolio-nav clearfix">
 				
 				<div class="prev-project link">
-					<?php previous_post('&larr; %','','yes'); ?>
+					<?php previous_post('%','','yes'); ?>
 				</div>
 				<div class="next-project link">
-					<?php next_post('% &rarr;','  ','yes'); ?>
+					<?php next_post('%','  ','yes'); ?>
 				</div>
 			</div><!-- end .single-portfolio-nav -->
 	
@@ -45,7 +45,7 @@
 			<div class="single-portfolio-media">
 				<?php echo get_the_content($post->ID);?>		
 			</div><!-- end .single-portfolio-media -->				
-			<div class="single-portfolio-detail clearfix">
+			<div class="single-portfolio-detail single-right clearfix">
 			
 				<div class="entry-content">
 					<?php echo $description;?>
@@ -53,12 +53,6 @@
 			
 				<div class="portfolio-meta">
 			
-					<span class="portfolio-meta-type">
-						Date				
-						<span class="portfolio-meta-value">
-							<?php the_time('F Y');?>
-						</span>
-					</span><!-- end .portfolio-meta-type -->
 					
 					<span class="portfolio-meta-type">
 						Client				
@@ -66,11 +60,11 @@
 					</span><!-- end .portfolio-meta-type -->
 					
 					<span class="portfolio-meta-type">
-						Skills									
-						<span class="portfolio-meta-value"><?php echo $port_skills;?></span>
+						Project									
+						<span class="portfolio-meta-value"><?php echo $port_projects;?></span>
 					</span><!-- end .portfolio-meta-types -->
 		
-					<a href="<?php if(!empty($port_projectlink)) echo $port_projectlink; else echo'javascript:void(0)';?>">Launch Project &rarr;</a>
+					<a class="launch" href="<?php if(!empty($port_projectlink)) echo $port_projectlink; else echo'javascript:void(0)';?>">Launch Project</a>
 					
 				</div><!-- end .portfolio-meta -->
 			

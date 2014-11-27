@@ -53,16 +53,17 @@ jQuery(document).ready(function() {
 		var postThumb = jQuery('.portfolio-thumb a');
 		
 		postThumb.hover( function() {
-		
-			jQuery(this).find('.portfolio-thumb-overlay').stop().css({
-				opacity: 0,
+			jQuery(this).find('.portfolio-thumb-overlay').css({
 				display: 'block'
+			});
+			jQuery(this).find('.portfolio-thumb-overlay .overlays').stop(true, false).css({
+				opacity: 0
 			}).animate({
-				opacity: 1
+				opacity: 0.65
 			}, 500);
 			
 		}, function() {
-			jQuery(this).find('.portfolio-thumb-overlay').stop().fadeOut(500);
+			jQuery(this).find('.portfolio-thumb-overlay').stop(true, false).fadeOut(500);
 		});
 		
 	}

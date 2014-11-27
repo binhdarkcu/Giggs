@@ -38,6 +38,19 @@
 	require_once( get_template_directory() . '/inc/custom-ajax-auth.php' );
 	//credits funciton
 	//include 'inc/load_credits.php';
+	
+	
+	//remove p tag
+	remove_filter( 'the_content', 'wpautop' );
+	add_action('init', 'remove_editor_init');
+	function remove_editor_init() {
+	    $post_id = $_GET['post'] ? $_GET['post'] : $_POST['post_ID'];
+	    $template_file = get_post_meta($post_id, '_wp_page_template', TRUE);
+	    if ($template_file == 'page-about.php') {
+	        remove_post_type_support('page', 'editor');
+	    }
+	}
+	
 	function get_page_id_by_slug($slug){
 	    global $wpdb;
 	    $id = $wpdb->get_var("SELECT ID FROM $wpdb->posts WHERE post_name = '".$slug."'AND post_type = 'page'");
