@@ -4,13 +4,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Giggs | Just another Theme Demos site</title>
+<title><?php echo get_bloginfo('name')?> | <?php echo get_bloginfo('description')?></title>
 
 <base href="<?php bloginfo('template_url')?>/"></base>
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="http://demo.pau1winslow.com/giggs/xmlrpc.php">
-<link rel="shortcut icon" href="http://demo.pau1winslow.com/giggs/wp-content/uploads/sites/8/2014/09/favicon.png
-" />
+<link rel="shortcut icon" href="favicon.ico"/>
 
 <link rel='stylesheet' id='checkpoint-style-css'  href='style.css?ver=4.0' type='text/css' media='all' />
 <link rel='stylesheet' id='sidr-css'  href='assets/css/sidr.css?ver=4.0' type='text/css' media='all' />
