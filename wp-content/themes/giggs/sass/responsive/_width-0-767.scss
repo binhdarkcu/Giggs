@@ -1,5 +1,66 @@
 @media only screen and (min-width: 0px) and (max-width: 770px) {
+  body{
+    min-width: 600px;
+  }
   #services .service{
     width: 100%;
+  }
+  
+  #header-primary {
+    width: 55%;
+    padding: 0 5%;
+    float: left;
+  }
+  #services .service h3{
+    font-size: 40px;
+  }
+  #services .service.service-3 p.line-1, #services .service.service-3 p.line-2, #services .service .pad p{
+    font-size: 20px;
+  }
+  body #home-primary{
+    background-size: 170%!important;
+    background-position: -215px 88px!important;
+  }
+  #content, #home-primary, .page-template-page-templateshomepage-php #content{
+    padding-top:90px;
+  }
+  #services .service.hasImg{
+     img{
+      width: 100%;
+    }
+  }
+  #services .service.hasImg.normal{
+    display: none;
+   
+  }
+  #services .service.hasImg.mobile{
+    display: block;
+    
+  }
+  .simple-menu{
+    margin: 41px 0 0 0;
+  }
+  .single-portfolio-detail{
+    width: 92%;
+  }
+  .home #home-primary .slide-text{
+    width: 85%;
+    padding: 9% 8% 23%;
+  }
+  .home .slide-text .txt-home{
+    font-size: 55px;
+    line-height: 47px;
+  }
+  .home .slide-text .workfor .txt{
+    font-size: 29px;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 600px) {
+  #header-secondary{
+    width: 87%;
+  }
+  .simple-menu{
+    margin-top: 45px;
   }
 }

@@ -1430,7 +1430,6 @@ input[type="submit"]:hover,
 @media only screen and (max-width: 770px) {
 
 	#header {
-		position: relative;
 		margin: 0;
 	}
 

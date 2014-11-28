@@ -23,7 +23,12 @@ var siteMain = (function() {
 	}
 	//FUNCTIONS
 	function responsiveAbout(){
-		jQuery('#services .service').height(jQuery('#services .service img').height());
+		if(jQuery(window).width() > 767 ){
+			jQuery('#services .service').height(jQuery('#services .service.hasImg.normal img').height());	
+		}else{
+			jQuery('#services .service').height(jQuery('#services .service.hasImg.mobile img').height());
+		}
+		
 	}
 	
 	function calHeightContact(){

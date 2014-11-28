@@ -43,7 +43,7 @@
   #footer input[type="password"]:focus,
   #footer input[type="search"]:focus,
   #footer textarea:focus {
-    border-color: #58e8a0;
+    
   }
 
   button:hover,
@@ -138,29 +138,31 @@
   }
   .text{
    
-    div{
+   
+  }
+  .pad{
+     text-align: left;
+    padding: 8%;
+    p{
       padding: 0;
       padding-bottom: 1.2em;
+      margin-bottom:0;
       font-size: 1.538em;
       line-height: 1.1;
       color: #666;
     }
   }
-  .pad{
-     text-align: left;
-    padding: 8%;
-  }
   &.service-3{
    p{ text-align: center;}
     p.line-1{
-      font-size: 20px;
+      font-size: 1.538em;
       color: #000;
     }
     span{
       display: block;
     }
     p.line-2{
-      font-size: 20px;
+      font-size: 1.538em;
       color: #666;
       a{
         color: #333;
@@ -359,6 +361,7 @@ a.simple-menu{
       margin-right: 4.5%;
       input[type="text"]{
         width: 95%;
+        outline: none;
       }
     }
     .col-2{
@@ -366,10 +369,12 @@ a.simple-menu{
       width: 47%;
       input{
         width: 95%;
+        outline: none;
       }
     }
     textarea{
       margin-top: 3px;
+      outline: none;
     }
   }
   p.areaRow{
@@ -385,4 +390,54 @@ a.simple-menu{
      line-height: 48px;
   }
 }
-
+#services .service.hasImg.mobile{
+  display: none;
+}
+.aboutPage{
+  ul.socialAbout{
+    list-style-type:none;
+    padding-top: 0;
+    display: table;
+    margin: -5px auto;
+    li{
+      display: inline-block;
+      margin-right: 4px;
+      a{
+        width: 32px;
+        height: 32px;
+        display: block;
+        &.linkv{
+          background: url(../assets/images/link-v.png) no-repeat;
+          &:hover{
+            background: url(../assets/images/link-v-hover.png) no-repeat;
+          }
+        }
+        &.linkbe{
+          background: url(../assets/images/link-be.png) no-repeat;
+          &:hover{
+            background: url(../assets/images/link-be-hover.png) no-repeat;
+          }
+        } 
+        &.linkin{
+          background: url(../assets/images/link-in.png) no-repeat;
+           &:hover{
+            background: url(../assets/images/link-in-hover.png) no-repeat;
+          }
+        } 
+        &.linkflickr{
+          background: url(../assets/images/link-dot.png) no-repeat;
+          &:hover{
+            background: url(../assets/images/link-dot-hover.png) no-repeat;
+          }
+        } 
+        &.linkskype{
+          background: url(../assets/images/link-skype.png) no-repeat;
+           &:hover{
+            background: url(../assets/images/link-skype-hover.png) no-repeat;
+          }
+        }   
+      }
+      
+    }
+  }
+}

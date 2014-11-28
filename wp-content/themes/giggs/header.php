@@ -28,7 +28,7 @@
     <style type='text/css'>
 		<?php if(is_home()){?>
 		body #home-primary {
-			background-image: url( <?php echo $bgHome['banner']?> );
+			background: url( <?php echo $bgHome['banner']?> );
 			background-repeat: no-repeat;
 			background-attachment: fixed;
 			background-position: right 88px;

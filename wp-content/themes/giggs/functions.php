@@ -42,12 +42,18 @@
 	
 	//remove p tag
 	remove_filter( 'the_content', 'wpautop' );
-	add_action('init', 'remove_editor_init');
-	function remove_editor_init() {
-	    $post_id = $_GET['post'] ? $_GET['post'] : $_POST['post_ID'];
-	    $template_file = get_post_meta($post_id, '_wp_page_template', TRUE);
-	    if ($template_file == 'page-about.php') {
-	        remove_post_type_support('page', 'editor');
+	add_action( 'admin_init', 'hide_editor' );
+
+	function hide_editor() {
+		// Get the Post ID.
+		$post_id = $_GET['post'] ? $_GET['post'] : $_POST['post_ID'] ;
+		if( !isset( $post_id ) ) return;
+	
+		// Get the name of the Page Template file.
+		$template_file = get_post_meta($post_id, '_wp_page_template', true);
+	    
+	    if($template_file == 'page-about.php'){ // edit the template name
+	    	remove_post_type_support('page', 'editor');
 	    }
 	}
 	
