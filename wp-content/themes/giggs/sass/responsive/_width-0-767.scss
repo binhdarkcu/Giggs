@@ -20,6 +20,9 @@
   body #home-primary{
     background-size: 170%!important;
     background-position: -215px 88px!important;
+    &.homePage{
+      padding-top:0;
+    }
   }
   #content, #home-primary, .page-template-page-templateshomepage-php #content{
     padding-top:90px;
