@@ -15,7 +15,7 @@
 			<div class="single-portfolio-header">
 			
 				<h1 class="page-title">
-					<?php echo get_the_title($post->ID);?>			
+					<?php echo strip_tags(get_the_title($post->ID),'<br />');?>			
 				</h1><!-- end .page-title -->
 	
 				<div class="page-description">
