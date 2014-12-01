@@ -47,4 +47,7 @@ jQuery(document).ready(function(){
 });
 jQuery(window).load(function(){
 	siteMain.init();
+	if(iSingle){
+		jQuery('.main-navigation ul li.portfolio_single').addClass('current-menu-item');
+	}
 });

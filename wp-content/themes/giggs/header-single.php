@@ -33,6 +33,7 @@
 	var iPad = <?php echo $iPad == TRUE ? 'true':'false' ?>;
 	var iTablet = <?php echo $iTablet == TRUE ? 'true':'false' ?>;
 	var isDesktop = <?php echo $isDesktop == TRUE ? 'true':'false' ?>;
+	var iSingle = <?php echo (is_single()) ? 'true':'false';?>;
 </script>
 </head>
 
