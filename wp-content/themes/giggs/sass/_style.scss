@@ -89,6 +89,18 @@
    text-align: center;
  } 
 }
+.single-portfolio-detail.single-right{
+  .entry-content{
+    a{
+      color: #666;
+      border: none;
+      text-decoration: underline;
+      &:hover{
+        text-decoration: none;  
+      }
+    }
+  }
+}
 .main-navigation ul li.current-menu-item a,
 .main-navigation ul li.current-menu-parent a{
     text-decoration: underline;
