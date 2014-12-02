@@ -50,4 +50,5 @@ jQuery(window).load(function(){
 	if(iSingle){
 		jQuery('.main-navigation ul li.portfolio_single').addClass('current-menu-item');
 	}
+	jQuery('#sidr-containr').css({'display':'block'});
 });
