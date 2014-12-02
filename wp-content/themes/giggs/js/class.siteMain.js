@@ -24,6 +24,7 @@ var siteMain = (function() {
 				forceHeight: false
 			});
 		}
+		s.refresh();
 	}
 	function respone(){
 		var w = jQuery(window).width();
