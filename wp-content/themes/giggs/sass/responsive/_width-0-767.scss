@@ -6,6 +6,9 @@
   #content, #home-primary, .page-template-page-templateshomepage-php #content{
     background: #fff;
   }
+   #content.contactPage{
+     background: transparent;
+   }
   #services .service{
     width: 100%;
     height: auto!important;
@@ -23,9 +26,7 @@
   #services .service.service-3 p.line-1, #services .service.service-3 p.line-2, #services .service .pad p{
     font-size: 20px;
   }
-  .contactPage .content-area p.areaRow span.lb{
-    font-size: 11px;
-  }
+ 
   body #home-primary{
    
     background-position: right 0px !important;
@@ -81,6 +82,15 @@
   #services .service.normal{
     display: none;
   }
+  .contactPage #sidebar  {
+    overflow: hidden;
+  }
+  .wpcf7-validation-errors{
+   font-size: 11px;
+    color: red; 
+    line-height: 11px;
+    padding-top: 10px;
+  }
 }
 
 @media only screen and (min-width: 0px) and (max-width: 600px) {
@@ -89,5 +99,12 @@
   }
   .simple-menu{
     margin-top: 45px;
+  }
+}
+
+
+body.mobile{
+   .contactPage .content-area div.areaRow span.lb{
+    font-size: 12px;
   }
 }

@@ -37,7 +37,7 @@
 </script>
 </head>
 
-<body class="single single-portfolio-items postid-259 custom-background">
+<body class="single single-portfolio-items postid-259 custom-background <?php if($iMobile == true) echo 'mobile';?>">
 
 <div id="page" class="hfeed site">
 
