@@ -89,6 +89,7 @@
    text-align: center;
  } 
 }
+
 .single-portfolio-detail.single-right{
   .entry-content{
     a{
@@ -135,9 +136,14 @@
   width: 50%;
   padding: 0;
    background: #eee;
+   &.mobile{
+     display: none; 
+   }
   &.hasImg{
     padding:0;
-    
+    img{
+      width: 100%;
+    }
   }
   h3{
     font-family: 'Rokkitt', serif;

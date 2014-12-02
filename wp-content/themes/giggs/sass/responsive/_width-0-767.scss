@@ -65,7 +65,13 @@
       padding: 5.5% 5%; 
     }
   }
-  
+  #services .service.mobile{
+    display: block;
+    background: #fff;
+  }
+  #services .service.normal{
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 0px) and (max-width: 600px) {

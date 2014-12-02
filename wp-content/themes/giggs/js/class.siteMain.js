@@ -23,12 +23,11 @@ var siteMain = (function() {
 	}
 	//FUNCTIONS
 	function responsiveAbout(){
-		if(jQuery(window).width() > 767 ){
-			jQuery('#services .service').height(jQuery('#services .service.hasImg.normal img').height());	
-		}else{
-			jQuery('#services .service').height(jQuery('#services .service.hasImg.mobile img').height());
+		jQuery('#services .service').height(jQuery('#services .service.hasImg img').height());	
+		if(jQuery(window).width()<767){
+			jQuery('#services .service.service_image_3.mobile img').attr('src',jQuery('#services .service.hasImg_3.normal img').attr('src'));
+			jQuery('#service_text_mobile_1').html(jQuery('#service_text_mobile_2').html());
 		}
-		
 	}
 	
 	function calHeightContact(){

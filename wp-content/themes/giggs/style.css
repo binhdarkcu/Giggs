@@ -1493,15 +1493,15 @@ input[type="submit"]:hover,
 	#services .service:nth-child(8),
 	#services .service:nth-child(9),
 	#services .service:nth-child(12) {
-		background: #fff;
+		
 	}
 
 	#services .service:nth-child(odd) {
-		background: #fafafa;
+		
 	}
 
 	#services .service:nth-child(even) {
-		background: #ececec;
+		
 	}
 
 	#header-primary {
