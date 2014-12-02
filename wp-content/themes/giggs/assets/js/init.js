@@ -16,11 +16,29 @@ jQuery(document).ready(function() {
 	/*--------------------------------------------------*/
 	/* Sidr Navigation
 	/*--------------------------------------------------*/
-
+	var iC = 1;
 	jQuery(document).ready(function() {
-		jQuery('.simple-menu').sidr({
-			side: 'right'
-		});
+		if(!iMobile){
+			jQuery('.simple-menu').sidr({
+				side: 'right'
+			});
+		}else{
+			jQuery('.simple-menu').on('click touchstart',function(){
+				//alert(1);
+				if(iC == 1){
+					jQuery('#sidr').show().animate({'right':0}, 500);
+					jQuery('body').css('position','absolute');
+					jQuery('body').animate({'right':jQuery('#sidr').width()}, 500);
+					iC = 0;
+				}else{
+					jQuery('#sidr').show().animate({'right':'-40%'}, 500);
+					jQuery('body').animate({'right':0}, 500,function(){
+						jQuery('body').removeAttr('style');
+					});
+					iC = 1;
+				}
+			});
+		}
 	});
 
 	/*--------------------------------------------------*/

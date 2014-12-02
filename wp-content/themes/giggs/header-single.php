@@ -14,7 +14,7 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="http://demo.pau1winslow.com/giggs/xmlrpc.php">
 <link rel="shortcut icon" href="favicon.ico"/>
-<?php echo $iMobile == TRUE ? '<meta name="viewport" content="width=600;" />':'' ?>
+<?php echo $iMobile == TRUE ? '<meta name="viewport" content="width=600" />':'' ?>
 <?php echo $iPad == TRUE ? '<meta name="viewport" content="width=device-width, initial-scale=1">':'' ?>
 <link rel='stylesheet' id='checkpoint-style-css'  href='style.css?ver=4.0' type='text/css' media='all' />
 <link rel='stylesheet' id='sidr-css'  href='assets/css/sidr.css?ver=4.0' type='text/css' media='all' />

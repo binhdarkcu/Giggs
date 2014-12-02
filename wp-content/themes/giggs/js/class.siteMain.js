@@ -23,8 +23,8 @@ var siteMain = (function() {
 			s = skrollr.init({
 				forceHeight: false
 			});
+			s.refresh();
 		}
-		s.refresh();
 	}
 	function respone(){
 		var w = jQuery(window).width();
@@ -53,11 +53,15 @@ var siteMain = (function() {
 
 jQuery(document).ready(function(){
 	siteMain.init();
+	setTimeout(function(){
+		jQuery('#sidr-containr').css({'display':'block'});
+	},1000);
 });
 jQuery(window).load(function(){
 	siteMain.init();
 	if(iSingle){
 		jQuery('.main-navigation ul li.portfolio_single').addClass('current-menu-item');
 	}
-	jQuery('#sidr-containr').css({'display':'block'});
+	
+	
 });
