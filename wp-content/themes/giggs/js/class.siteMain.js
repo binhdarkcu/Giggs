@@ -5,6 +5,7 @@ var siteMain = (function() {
 		font	:	13,
 		w		:	1200
 	}
+	var s = '';
 	//INIT
 	function init(){
 		responsiveAbout();
@@ -14,8 +15,16 @@ var siteMain = (function() {
 			responsiveAbout();
 			respone();
 		});
+		createScrolr();
 	}
 	
+	function createScrolr(){
+		if(!iMobile){
+			s = skrollr.init({
+				forceHeight: false
+			});
+		}
+	}
 	function respone(){
 		var w = jQuery(window).width();
 		setting.font = (w*13)/setting.w;

@@ -3,8 +3,13 @@
     min-width: 600px;
      -webkit-text-size-adjust: none;
   }
+  #content, #home-primary, .page-template-page-templateshomepage-php #content{
+    background: #fff;
+  }
   #services .service{
     width: 100%;
+    height: auto!important;
+    float: left;
   }
   
   #header-primary {
@@ -22,8 +27,8 @@
     font-size: 11px;
   }
   body #home-primary{
-    background-size: 170%!important;
-    background-position: -215px 88px!important;
+   
+    background-position: right 0px !important;
     &.homePage{
       padding-top:0;
     }

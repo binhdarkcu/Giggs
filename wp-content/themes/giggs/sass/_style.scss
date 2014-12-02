@@ -258,6 +258,36 @@ a.simple-menu{
     }
   }
 }
+#portfolio .portfolio-items{
+  .portfolio-thumb{
+    .portfolio-thumb-overlay{
+      display: block;
+      .overlay-inner{
+        display: none;
+      }
+       .overlays{
+         transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+           opacity: 0;
+          filter:alpha(opacity=0);
+       }
+    }
+  }
+  .portfolio-thumb:hover{
+    .portfolio-thumb-overlay{
+      .overlay-inner{
+        display: table;
+      }
+      .overlays{
+        display: block;
+        opacity: 0.65;
+        filter:alpha(opacity=65%);
+      }
+      
+    }
+  }
+}
 #sidebar{
   position: relative;
   padding: 5.5% 3%;

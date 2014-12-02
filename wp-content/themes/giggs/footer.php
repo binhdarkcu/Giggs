@@ -29,7 +29,9 @@
 <script type='text/javascript' src='assets/js/jquery.flexslider.js?ver=4.0'></script>
 <script type='text/javascript' src='assets/js/jquery.touchwipe.js?ver=4.0'></script>
 <script type='text/javascript' src='assets/js/init.js?ver=4.0'></script>
-<script type='text/javascript' src='assets/js/comment-reply.min.js?ver=4.0'></script>
+<script type='text/javascript' src='assets/js/init.js?ver=4.0'></script>
+<script type='text/javascript' src='assets/js/skrollr.min.js'></script>
+<script type='text/javascript' src='assets/js/waypoints.min.js'></script>
 <!--script src="js/register.js"></script-->
 <script src="js/class.siteMain.js"></script>
 

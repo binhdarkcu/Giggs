@@ -36,7 +36,7 @@
 			background: url( <?php echo $bgHome['banner']?> );
 			background-repeat: no-repeat;
 			background-attachment: fixed;
-			background-position: right 88px;
+			background-position: right 55px;
 			background-size: cover;
 		}
 		<?php }	?>
@@ -73,7 +73,7 @@
 			<div id="header-secondary">
 				
 				
-				<a class="simple-menu" href="#sidr">Menu</a>
+				<a class="simple-menu" href="javascript:void(0);">Menu</a>
 
 				<div id="sidr-containr">
 

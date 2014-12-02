@@ -58,7 +58,7 @@
 
 				
 				
-				<a class="simple-menu" href="#sidr"></a>
+				<a class="simple-menu" href="javascript:void(0);">Menu</a>
 
 				<div id="sidr-containr">
 

@@ -68,6 +68,6 @@ jQuery(document).ready(function() {
 		
 	}
 	
-	image_hover_fadein();
+	//image_hover_fadein();
 
 });
