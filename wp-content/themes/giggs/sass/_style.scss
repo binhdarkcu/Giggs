@@ -306,6 +306,9 @@ a.simple-menu{
             width: 32px;
             height: 32px;
             display: block;
+             transition: all 0.2s;
+        -webkit-transition: all 0.2s;
+        -moz-transition: all 0.2s;
             &.linkv{
               background: url(../assets/images/link-v.png) no-repeat;
               &:hover{
@@ -424,6 +427,9 @@ a.simple-menu{
         width: 32px;
         height: 32px;
         display: block;
+        transition: all 0.2s;
+        -webkit-transition: all 0.2s;
+        -moz-transition: all 0.2s;
         &.linkv{
           background: url(../assets/images/link-v.png) no-repeat;
           &:hover{
