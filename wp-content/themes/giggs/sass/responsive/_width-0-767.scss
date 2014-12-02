@@ -1,6 +1,7 @@
 @media only screen and (min-width: 0px) and (max-width: 770px) {
   body{
     min-width: 600px;
+     -webkit-text-size-adjust: none;
   }
   #services .service{
     width: 100%;
@@ -16,6 +17,9 @@
   }
   #services .service.service-3 p.line-1, #services .service.service-3 p.line-2, #services .service .pad p{
     font-size: 20px;
+  }
+  .contactPage .content-area p.areaRow span.lb{
+    font-size: 11px;
   }
   body #home-primary{
     background-size: 170%!important;
