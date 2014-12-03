@@ -26,9 +26,7 @@
 <script type='text/javascript' src='assets/js/jquery.fitvids.js?ver=4.0'></script>
 <script type='text/javascript' src='assets/js/jquery.superfish.js?ver=4.0'></script>
 <script type='text/javascript' src='assets/js/jquery.sidr.js?ver=4.0'></script>
-<script type='text/javascript' src='assets/js/jquery.flexslider.js?ver=4.0'></script>
 <script type='text/javascript' src='assets/js/jquery.touchwipe.js?ver=4.0'></script>
-<script type='text/javascript' src='assets/js/init.js?ver=4.0'></script>
 <script type='text/javascript' src='assets/js/init.js?ver=4.0'></script>
 <script type='text/javascript' src='assets/js/skrollr.min.js'></script>
 <script type='text/javascript' src='assets/js/waypoints.min.js'></script>

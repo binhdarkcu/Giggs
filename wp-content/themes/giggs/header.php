@@ -36,7 +36,7 @@
 			background: url( <?php echo $bgHome['banner']?> );
 			background-repeat: no-repeat;
 			background-attachment: fixed;
-			background-position: right 55px;
+			background-position: right 46px;
 			background-size: cover;
 		}
 		<?php }	?>

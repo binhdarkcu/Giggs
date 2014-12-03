@@ -29,13 +29,7 @@
 	
 	//change label post
 	include 'inc/change_label_post.php';
-	//login
-	include 'inc/login.php';
-	//register
-	include 'inc/register.php';
-
-	//register
-	require_once( get_template_directory() . '/inc/custom-ajax-auth.php' );
+	
 	//credits funciton
 	//include 'inc/load_credits.php';
 	

@@ -4,14 +4,7 @@ jQuery(document).ready(function() {
 	/* Flexslider
 	/*--------------------------------------------------*/
 
-	jQuery(document).ready(function() {
-		jQuery('.flexslider').flexslider({
-			smoothHeight: true,
-			controlNav: true,
-			directionNav: false,
-			animation: 'fade'
-		});
-	});
+	
 
 	/*--------------------------------------------------*/
 	/* Sidr Navigation

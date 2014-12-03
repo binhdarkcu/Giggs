@@ -60,7 +60,7 @@ jQuery(document).ready(function(){
 jQuery(window).load(function(){
 	siteMain.init();
 	if(iSingle){
-		jQuery('.main-navigation ul li.portfolio_single').addClass('current-menu-item');
+		jQuery('.main-navigation ul li.portfolio_single, #footer-navigation ul li.portfolio_single').addClass('current-menu-item');
 	}
 	
 	
