@@ -15,7 +15,7 @@
 			<div id="header-secondary">
 				
 				
-				<a class="simple-menu" href="javascript:void(0);">Menu</a>
+				<a class="simple-menu" href="javascript:void(0);"></a>
 
 				<div id="sidr-containr">
 

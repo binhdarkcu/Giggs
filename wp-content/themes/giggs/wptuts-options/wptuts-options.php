@@ -288,7 +288,7 @@ html ul.tabs li.active, html ul.tabs li.active a:hover  { /*--Makes sure that th
 	function wptuts_setting_banner() {
 	    $wptuts_options = get_option( 'theme_wptuts_options' );
 	    ?>
-	    	<img src="<?php echo esc_url( $wptuts_options['banner'] ); ?>" id="banner_preview"/>
+	    	<img width="600" src="<?php echo esc_url( $wptuts_options['banner'] ); ?>" id="banner_preview"/>
 	        <input type="text" id="banner_url" name="theme_wptuts_options[banner]" value="<?php echo esc_url( $wptuts_options['banner'] ); ?>" style="width: 515px;"/>
 	        <input id="upload_banner_button" type="button" class="button" value="<?php _e( 'Upload banner', 'wptuts' ); ?>" />
 	        <span class="description"><?php _e('Upload an image for the background.', 'wptuts' ); ?></span>

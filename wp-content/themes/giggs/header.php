@@ -25,7 +25,7 @@
 <link rel='stylesheet' href='css/all.css' type='text/css'/>
 
 <link rel='stylesheet' id='checkpoint-montserrat-css'  href='http://fonts.googleapis.com/css?family=Montserrat%3A400%2C700&#038;ver=4.0' type='text/css' media='all' />
-<link rel='stylesheet' id='checkpoint-rokkitt-css'  href='http://fonts.googleapis.com/css?family=Rokkitt%3A400%2C700&#038;ver=4.0' type='text/css' media='all' />
+<link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700' rel='stylesheet' type='text/css'>
 <meta name="generator" content="WordPress 4.0" />
 	<?php
 		$bgHome = get_option('theme_wptuts_options');
