@@ -23,6 +23,7 @@
   .site-main [class*="navigation"] a:hover,
   .service .the-icon {
     color: #fff;
+    outline: none;
      
   }
 
@@ -92,6 +93,9 @@
 .single-portfolio-items .page-header{
   padding: 111px 5%;
   position: relative;
+}
+.single-portfolio-nav a{
+  white-space: nowrap;
 }
 .single-portfolio-nav{
   position: absolute;

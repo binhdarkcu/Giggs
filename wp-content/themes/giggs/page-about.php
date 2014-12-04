@@ -42,6 +42,13 @@ get_header();?>
 						<?php echo $text_left_1;?>
 						<?php if($i1 == 3){?>
 							<ul class="socialAbout">
+								<?php
+									$linkv = (get_option('url_vine') != '') ? get_option('url_vine')  : 'javascript:void(0);';
+									$linkbe = (get_option('url_be') != '')? get_option('url_be') : 'javascript:void(0);';
+									$linkin = (get_option('url_linkin') != '') ? get_option('url_linkin') : 'javascript:void(0);';
+									$linkflickr = (get_option('url_flickr') != '') ? get_option('url_flickr') : 'javascript:void(0);';
+									$linkskype = (get_option('url_skype') != '') ? get_option('url_skype') : 'javascript:void(0);';
+								?>
 								<li>
 									<a href="<?php echo $linkin;?>" target="_blank" class="linkin"></a>
 								</li>

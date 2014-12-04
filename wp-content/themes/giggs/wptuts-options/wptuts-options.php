@@ -129,10 +129,10 @@
 	                   <input name="url_email" size="65" style="border-style:inset;border-width: 2px;color: #000;background-color: #f1f1f1" value="<?php echo esc_attr( get_option('url_email') ); ?>"/><br /><br />
 	       			 <!--title fr-->
 	       			 
-	       			 <label for="url_vine">Vine social</label><br/>
+	       			 <label for="url_vine">Vine</label><br/>
 	                   <input name="url_vine" size="65" style="border-style:inset;border-width: 2px;color: #000;background-color: #f1f1f1" value="<?php echo esc_attr( get_option('url_vine') ); ?>"/><br /><br />
 	       			 
-	              	   <label for="url_be">Be social</label><br/>
+	              	   <label for="url_be">Behance</label><br/>
 	                   <input name="url_be" size="65" style="border-style:inset;border-width: 2px;color: #000;background-color: #f1f1f1" value="<?php echo esc_attr( get_option('url_be') ); ?>"/><br /><br />
 	                
 	                 <!--Summary fr-->
@@ -140,7 +140,7 @@
 	                   <input name="url_linkin" size="65" style="border-style:inset;border-width: 2px;color: #000;background-color: #f1f1f1" value="<?php echo esc_attr( get_option('url_linkin') ); ?>"/><br /><br />
 	                   
 	                 <!--Summary fr-->
-	                   <label for="url_flickr">Flickr social</label><br/>
+	                   <label for="url_flickr">Flickr</label><br/>
 	                   <input name="url_flickr" size="65" style="border-style:inset;border-width: 2px;color: #000;background-color: #f1f1f1" value="<?php echo esc_attr( get_option('url_flickr') ); ?>"/><br /><br />	
 	                    <!--Summary fr-->
 	                <!--Summary fr-->

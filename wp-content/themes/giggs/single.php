@@ -27,10 +27,15 @@
 			<div class="single-portfolio-nav clearfix">
 				
 				<div class="prev-project link">
-					<?php previous_post('%','','yes'); ?>
+					<?php 
+						c2c_next_or_loop_post_link();
+					?>
 				</div>
 				<div class="next-project link">
-					<?php next_post('%','  ','yes'); ?>
+					<?php 
+						//next_post('%','  ','yes');
+						c2c_previous_or_loop_post_link(); 
+					?>
 				</div>
 			</div><!-- end .single-portfolio-nav -->
 	
