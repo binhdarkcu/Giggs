@@ -50,7 +50,7 @@
 	                ?>
 	 
 	                <p class="submit">
-	                    <input name="theme_wptuts_options[submit]" id="submit_options_form" type="submit" class="button-primary" value="<?php esc_attr_e('Save Settings', 'wptuts'); ?>" />
+	                    <input name="theme_wptuts_options[submit]" id="submit_options_form" type="submit" class="button-primary" value="<?php esc_attr_e('Update', 'wptuts'); ?>" />
 	                    
 	                </p>
 	 
@@ -96,7 +96,7 @@
      
     </div>
     
-    <h3 style="float:left;width:100%;margin-top:20px;">Contact</h3>
+    <h3 style="float:left;width:100%;margin-top:20px;" id="contact-div">Contact</h3>
    <?php
       if ( !empty($_POST) && wp_verify_nonce($_POST['social_option'],'social_option') )
       {
