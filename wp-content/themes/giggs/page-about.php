@@ -11,7 +11,7 @@ get_header();?>
 				$contact = get_post($idContact);
 				$bigTitle = get_post_meta($idContact,'tt_page_introduce',true);
 				$smalltext = get_post_meta($idContact,'tt_page_smalltext',true);
-				//print_r($contact);
+				
 			?>
 			<h1 class="page-title">
 				<?php echo $bigTitle;?>		</h1><!-- end .page-title -->
@@ -72,7 +72,7 @@ get_header();?>
 				<?php }?>
 					<!-- end .service -->
 				<div class="service hasImg hasImg_<?php echo $i1;?> <?php if($i1==3) echo 'normal';?>"><img class="size-full wp-image-183 alignleft" src="<?php echo $text_image_1;?>" alt="" width="682" height="378" /></div>
-			<?php }elseif($i1%2==0){?>
+			    <?php }elseif($i1%2==0){?>
 				<div class="service hasImg service_image_<?php echo $i1;?>"><img class="size-full wp-image-185 alignleft" src="<?php echo $text_image_1;?>" alt="" width="682" height="378" /></div>
 				<!-- end .service -->
 				<div class="service hasImg mobile service_image_3"><img class="size-full wp-image-183 alignleft" src="" alt="" width="682" height="378" /></div>
@@ -88,5 +88,10 @@ get_header();?>
 			<?php } endwhile; }?>
 			
 	</div><!-- end #content -->
+	<div class="aboutLightBox">
+		<?php 
+			echo $contact->post_content;
+		?>		
+	</div>
 
 <?php get_footer();?>

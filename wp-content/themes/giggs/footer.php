@@ -32,6 +32,7 @@
 <script type='text/javascript' src='assets/js/waypoints.min.js'></script>
 <!--script src="js/register.js"></script-->
 <script src="js/class.siteMain.js"></script>
+<script src="js/jquery.swipebox.min.js"></script>
 
 </body>
 </html>

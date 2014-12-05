@@ -50,6 +50,7 @@
 		var isDesktop = <?php echo $isDesktop == TRUE ? 'true':'false' ?>;
 		var iSingle = <?php echo (is_single()) ? 'true':'false';?>;
 	</script>
+<?php //wp_head();?>
 </head>
 
 <body id="skrollr-body" class="home page page-id-231 page-template page-template-page-templateshomepage-php custom-background <?php if($iMobile == true) echo 'mobile';?>">

@@ -3,7 +3,7 @@ var siteMain = (function() {
 	//PARAMATER
 	var setting = {
 		font	:	13,
-		w		:	1200
+		w		:	1300
 	}
 	var s = '';
 	//INIT
@@ -16,6 +16,16 @@ var siteMain = (function() {
 			respone();
 		});
 		createScrolr();
+		
+	}
+	
+	function openLightBox(){
+		jQuery( '.aboutLightBox a' ).swipebox();
+		jQuery('a.lightboxLink').bind("click", (function (e) {
+			e.preventDefault();
+			//jQuery('.aboutLightBox').css({'display':'block'});
+			jQuery( '.aboutLightBox a' ).first().trigger('click');
+		}));
 	}
 	
 	function createScrolr(){
@@ -46,7 +56,8 @@ var siteMain = (function() {
 	//RETURN
 	return {
 		init:init,
-		responsiveAbout:responsiveAbout
+		responsiveAbout:responsiveAbout,
+		openLightBox:openLightBox
 	}
 	
 })();	
@@ -59,6 +70,7 @@ jQuery(document).ready(function(){
 });
 jQuery(window).load(function(){
 	siteMain.init();
+	siteMain.openLightBox();
 	if(iSingle){
 		jQuery('.main-navigation ul li.portfolio_single, #footer-navigation ul li.portfolio_single').addClass('current-menu-item');
 	}
