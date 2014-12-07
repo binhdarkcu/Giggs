@@ -8,8 +8,6 @@ var siteMain = (function() {
 	var s = '';
 	//INIT
 	function init(){
-		responsiveAbout();
-		calHeightContact();
 		respone();
 		jQuery(window).resize(function(){
 			responsiveAbout();
@@ -57,7 +55,8 @@ var siteMain = (function() {
 	return {
 		init:init,
 		responsiveAbout:responsiveAbout,
-		openLightBox:openLightBox
+		openLightBox:openLightBox,
+		calHeightContact:calHeightContact
 	}
 	
 })();	
@@ -69,7 +68,8 @@ jQuery(document).ready(function(){
 	},1000);
 });
 jQuery(window).load(function(){
-	siteMain.init();
+	siteMain.responsiveAbout();
+	siteMain.calHeightContact();
 	siteMain.openLightBox();
 	if(iSingle){
 		jQuery('.main-navigation ul li.portfolio_single, #footer-navigation ul li.portfolio_single').addClass('current-menu-item');
