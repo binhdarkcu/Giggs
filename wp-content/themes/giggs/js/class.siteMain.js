@@ -42,7 +42,7 @@ var siteMain = (function() {
 	//FUNCTIONS
 	function responsiveAbout(){
 		jQuery('#services .service').height(jQuery('#services .service.hasImg img').height());	
-		if(jQuery(window).width()<767){
+		if((jQuery(window).width()<767) || (iPad && jQuery(window).width()<=768)){
 			jQuery('#services .service.service_image_3.mobile img').attr('src',jQuery('#services .service.hasImg_3.normal img').attr('src'));
 			jQuery('#service_text_mobile_1').html(jQuery('#service_text_mobile_2').html());
 		}
