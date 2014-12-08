@@ -2,7 +2,7 @@
 
 	<div id="content" class="site-content clearfix">
 	
-		<div id="home-primary" class="homePage clearfix" data-center="background-position: right 340px" data-top-bottom="background-position: right 400px" data-bottom-top="background-position: right -400px">
+		<div id="home-primary" class="homePage clearfix" data-center="background-position: right 0" data-top-bottom="background-position: right 100px" data-bottom-top="background-position: right -100px">
 			<div class="slide-text">
 				<div class="txt-home">
 					<?php

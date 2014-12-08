@@ -116,6 +116,10 @@ html.swipebox {
 #swipebox-caption.force-visible-bars {
   top: 0!important;
 }
+#swipebox-caption a{
+  text-decoration: none;
+  border: none;
+}
 
 #swipebox-action #swipebox-prev, #swipebox-action #swipebox-next,
 #swipebox-action #swipebox-close {
