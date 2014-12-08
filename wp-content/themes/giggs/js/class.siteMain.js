@@ -27,7 +27,7 @@ var siteMain = (function() {
 	}
 	
 	function createScrolr(){
-		if(!iMobile){
+		if(isDesktop){
 			s = skrollr.init({
 				forceHeight: false
 			});
