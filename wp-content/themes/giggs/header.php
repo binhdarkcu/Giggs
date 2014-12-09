@@ -32,11 +32,11 @@
 	?>
     <style type='text/css'>
 		<?php if(is_home()){?>
-		body #home-primary {
-			background: url( <?php echo $bgHome['banner']?> ) #bdbdbd;
+		body #home-primary .bg-home{
+			background: url(images/cards.jpg) no-repeat;
 			background-repeat: no-repeat;
+			background-position: right 0px;
 			background-attachment: fixed;
-			background-position: right 0;
 		}
 		<?php }	?>
 	</style>

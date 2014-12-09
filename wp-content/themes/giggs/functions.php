@@ -11,7 +11,7 @@
 	add_action( 'init', 'register_menu' );
 	
 	//add theme support
-	add_theme_support('post-thumbnails',array('post','page','services','portfolio','blogs'));
+	add_theme_support('post-thumbnails',array('post','page','services','portfolio','blogs','about-lightbox'));
 
 	//register meta box
 	// Initialize the metabox class
@@ -36,19 +36,9 @@
 	
 	//remove p tag
 	remove_filter( 'the_content', 'wpautop' );
-	//add_action( 'admin_init', 'hide_editor' );
+	add_action( 'admin_init', 'hide_editor' );
 	
 	
-	//add lightbox
-	define("IMAGE_FILETYPE", "(bmp|gif|jpeg|jpg|png)", true);
-
-	function addlightboxrel_replace($string) {
-		$pattern = '/<a(.*?)href="(.*?).(bmp|gif|jpeg|jpg|png)"(.*?)>/i';
-	  	$replacement = '<a$1href="$2.$3" rel=\'Lightbox[imagegroup]\'$4>';
-		return preg_replace($pattern, $replacement, $string);
-	}
-	
-	add_filter('the_content', 'addlightboxrel_replace');
 	
 	function hide_editor() {
 		// Get the Post ID.

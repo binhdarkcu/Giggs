@@ -60,6 +60,26 @@ $meta_boxes[] =array(
 	 )
 );
 
+$meta_boxes[] =array(
+   'id'=>'pages_meta',
+   'title'=>'Information',
+   'pages'=>array('about-lightbox'),
+   'context' => 'normal',
+   'priority' => 'high',
+   'fields' => array(
+  		
+   		array(
+			'name'             => 'Link',
+			'id'               => "{$prefix}ab_lightbox_link",
+			'type'             => 'textarea'
+		),
+		array(
+			'name'             => 'Author',
+			'id'               => "{$prefix}ab_lightbox_author",
+			'type'             => 'textarea'
+		)
+	 )
+);
 
 $meta_boxes[] =array(
    'id'=>'dribble_meta',

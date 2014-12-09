@@ -3,7 +3,7 @@ var siteMain = (function() {
 	//PARAMATER
 	var setting = {
 		font	:	13,
-		w		:	1300
+		w		:	1360
 	}
 	var s = '';
 	//INIT
@@ -18,12 +18,14 @@ var siteMain = (function() {
 	}
 	
 	function openLightBox(){
-		jQuery( '.aboutLightBox a' ).swipebox();
+		//jQuery( '.aboutLightBox a' ).swipebox();
 		jQuery('a.lightboxLink').bind("click", (function (e) {
 			e.preventDefault();
 			//jQuery('.aboutLightBox').css({'display':'block'});
 			jQuery( '.aboutLightBox a' ).first().trigger('click');
+			//Fresco.show({ options: { ui: 'inside' } });
 		}));
+		
 	}
 	
 	function createScrolr(){

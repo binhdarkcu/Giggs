@@ -47,7 +47,7 @@ get_header();?>
 									$linkbe = (get_option('url_be') != '')? get_option('url_be') : 'javascript:void(0);';
 									$linkin = (get_option('url_linkin') != '') ? get_option('url_linkin') : 'javascript:void(0);';
 									$linkflickr = (get_option('url_flickr') != '') ? get_option('url_flickr') : 'javascript:void(0);';
-									$linkskype = (get_option('url_skype') != '') ? get_option('url_skype') : 'javascript:void(0);';
+									$linkvine = (get_option('url_vine') != '') ? get_option('url_vine') : 'javascript:void(0);';
 								?>
 								<li>
 									<a href="<?php echo $linkin;?>" target="_blank" class="linkin"></a>
@@ -61,7 +61,7 @@ get_header();?>
 									<a href="<?php echo $linkflickr;?>" target="_blank" class="linkflickr"></a>
 								</li>
 								<li>
-									<a href="skype:<?php echo $linkskype;?>?chat" class="linkskype"></a>
+									<a href="skype:<?php echo $linkvine;?>?chat" class="linkv"></a>
 								</li>
 							</ul>
 						<?php }?>
@@ -89,9 +89,29 @@ get_header();?>
 			
 	</div><!-- end #content -->
 	<div class="aboutLightBox">
-		<?php 
-			echo $contact->post_content;
-		?>		
+		<div class="row-fluid">
+			<div class="thumbnail span2 work">
+				<?php
+					$args_blog = array(
+						'post_type' 	 => 'about-lightbox',
+						'posts_per_page' =>  -1 ,
+						'order'			 => 'asc'
+					);
+					query_posts( $args_blog );
+					if(have_posts()): while(have_posts()): the_post();
+	            	$url = wp_get_attachment_image_src( get_post_thumbnail_id(get_the_id()), 'large' );
+					$link = get_post_meta(get_the_id(),'tt_ab_lightbox_link',true);
+					$author = get_post_meta(get_the_id(),'tt_ab_lightbox_author',true);
+					$href = '<a href='.$link.' target=_blank>'.$author.'</a>';
+				?>
+				<a data-fresco-caption="<?php echo $href;?>" data-fresco-group='aboutImg' 
+					 data-fresco-group-options='thumbnails: false, ui: "inside"'
+					 href="<?php echo $url[0];?>" class="fresco">
+					<img class="aligncenter wp-image-263 size-full" title="<?php echo get_the_title(get_the_id());?>" src="<?php echo $url[0];?>" width="1200" height="797" />
+				</a>
+				<?php endwhile; endif;?>
+			</div>
+		</div>
 	</div>
 
 <?php get_footer();?>

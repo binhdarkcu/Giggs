@@ -1,8 +1,9 @@
 <?php get_header();?>
 
 	<div id="content" class="site-content clearfix">
-	
-		<div id="home-primary" class="homePage clearfix" data-center="background-position: right 0" data-top-bottom="background-position: right 100px" data-bottom-top="background-position: right -100px">
+		<!--data-center="background-position: right 0" data-top-bottom="background-position: right 150px" data-bottom-top="background-position: right -100px"-->
+		<div id="home-primary" class="homePage clearfix" >
+			<div class="bg-home" data-center="background-position: right 0px" data-top-bottom="background-position: right 140px" data-bottom-top="background-position: right 0px"></div>
 			<div class="slide-text">
 				<div class="txt-home">
 					<?php

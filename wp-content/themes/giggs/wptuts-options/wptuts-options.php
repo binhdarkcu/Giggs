@@ -23,7 +23,7 @@
 	// Add "WPTuts Options" link to the "Appearance" menu
 	function wptuts_menu_options() {
 	    // add_theme_page( $page_title, $menu_title, $capability, $menu_slug, $function);
-	    add_theme_page('Customize options', 'Customize options', 'edit_theme_options', 'wptuts-settings', 'wptuts_admin_options_page');
+	    add_theme_page('Options', 'Options', 'edit_theme_options', 'wptuts-settings', 'wptuts_admin_options_page');
 	}
 	// Load the Admin Options page
 	add_action('admin_menu', 'wptuts_menu_options');

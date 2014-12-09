@@ -31,8 +31,10 @@
 <script type='text/javascript' src='assets/js/skrollr.min.js'></script>
 <script type='text/javascript' src='assets/js/waypoints.min.js'></script>
 <!--script src="js/register.js"></script-->
+<script src="js/fresco.js"></script>
+
 <script src="js/class.siteMain.js"></script>
-<script src="js/jquery.swipebox.min.js"></script>
+
 
 </body>
 </html>
