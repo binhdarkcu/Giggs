@@ -549,9 +549,12 @@ border-color: #fff;
 .aboutLightBox{
   display: none;
 }
-#home-primary{
-  overflow: hidden;
+.content-home{
+   overflow: hidden;
   position: relative;
+}
+#home-primary{
+ 
   background: #d1d1d6;
   .slide-text{
     position: relative;
@@ -564,6 +567,11 @@ border-color: #fff;
   left:0;
   width: 1950px;
   height: 716px;
+  top: 0;
+}
+#portfolio{
+  position: relative;
+  z-index: 2;
 }
 .bg-home{
   position: absolute;

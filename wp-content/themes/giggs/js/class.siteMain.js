@@ -13,8 +13,8 @@ var siteMain = (function() {
 			responsiveAbout();
 			respone();
 		});
-		createScrolr();
-		
+		//createScrolr();
+		parallaxHome();
 	}
 	
 	
@@ -28,7 +28,26 @@ var siteMain = (function() {
 		}));
 		
 	}
-	
+	var iScrollPos = 0;
+	function parallaxHome(){
+		jQuery(window).scroll(function () {
+		    var iCurScrollPos = $(this).scrollTop();
+		    if (iCurScrollPos > iScrollPos) {
+		    	console.log($(this).scrollTop());
+		        //Scrolling Down
+		        jQuery('.wrapBG').css({'top':$(this).scrollTop()});
+		        jQuery('#portfolio').css({'margin-top':-$(this).scrollTop()});
+		        //jQuery('#home-primary .slide-text').css({'top' : - $(this).scrollTop() + 90 });
+		    } else {
+		       //console.log($(this).scrollTop());
+		       //Scrolling Up
+		       jQuery('.wrapBG').css({'top':$(this).scrollTop()},100);
+		       jQuery('#portfolio').css({'margin-top':-$(this).scrollTop()});
+		       //jQuery('#home-primary .slide-text').css({'top' : - $(this).scrollTop() });
+		    }
+		    iScrollPos = iCurScrollPos;
+		});
+	}
 	function createScrolr(){
 		if(isDesktop){
 			s = skrollr.init({
