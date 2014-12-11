@@ -17,6 +17,7 @@ var siteMain = (function() {
 		
 	}
 	
+	
 	function openLightBox(){
 		//jQuery( '.aboutLightBox a' ).swipebox();
 		jQuery('a.lightboxLink').bind("click", (function (e) {

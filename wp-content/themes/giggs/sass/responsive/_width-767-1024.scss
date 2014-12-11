@@ -9,13 +9,18 @@
     width: 55%;
   }
 }
-@media only screen and (min-width: 1367px) and (max-width: 4000px) {
-  .bg-home{
-    width: 100%;
-    background-size: cover!important;
+@media only screen and (min-width: 1950px) and (max-width: 4000px) {
+  body #home-primary .bg-home{
+    background-attachment: fixed!important;
+    background-position: 60px -36px !important;
+  }
+  .wrapBG{
+    width: 100%; 
+    background: url(../images/bg-cards.jpg) repeat;
+    background-size: contain;
   }
   .home #home-primary .slide-text{
-    padding: 165px 99px 235px;
+   
   }
 }
 

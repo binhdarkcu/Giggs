@@ -18,7 +18,7 @@
 </footer><!-- end #footer -->
 
 </div><!-- end #page -->
-<script type='text/javascript' src='assets/js/jquery.js'></script>
+
 <script type='text/javascript' src='assets/js/jquery.easing.js?ver=4.0'></script>
 <script type='text/javascript' src='assets/js/jquery.modernizr.js?ver=4.0'></script>
 <script type='text/javascript' src='assets/js/masonry.min.js?ver=3.1.2'></script>
@@ -31,7 +31,7 @@
 <script type='text/javascript' src='assets/js/skrollr.min.js'></script>
 <script type='text/javascript' src='assets/js/waypoints.min.js'></script>
 <!--script src="js/register.js"></script-->
-<script src="js/fresco.js"></script>
+
 
 <script src="js/class.siteMain.js"></script>
 

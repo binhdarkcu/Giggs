@@ -98,15 +98,15 @@ get_header();?>
 						'order'			 => 'asc'
 					);
 					query_posts( $args_blog );
+					$i = 0;
 					if(have_posts()): while(have_posts()): the_post();
+					$i++;
 	            	$url = wp_get_attachment_image_src( get_post_thumbnail_id(get_the_id()), 'large' );
 					$link = get_post_meta(get_the_id(),'tt_ab_lightbox_link',true);
 					$author = get_post_meta(get_the_id(),'tt_ab_lightbox_author',true);
 					$href = '<a href='.$link.' target=_blank>'.$author.'</a>';
 				?>
-				<a data-fresco-caption="<?php echo $href;?>" data-fresco-group='aboutImg' 
-					 data-fresco-group-options='thumbnails: false, ui: "inside"'
-					 href="<?php echo $url[0];?>" class="fresco">
+				<a data-fresco-caption="<?php echo $href;?>" data-fresco-group='aboutImg'  <?php if($i==1){?> data-fresco-group-options="ui: 'inside'" <?php }?> href="<?php echo $url[0];?>" class="fresco">
 					<img class="aligncenter wp-image-263 size-full" title="<?php echo get_the_title(get_the_id());?>" src="<?php echo $url[0];?>" width="1200" height="797" />
 				</a>
 				<?php endwhile; endif;?>

@@ -254,7 +254,7 @@ border-color: #fff;
 }
 .home {
   .slide-text{
-    width: 50%;
+    width: 700px;
     .txt-home{
       font-family: 'Rokkitt', serif;
       font-size: 72px;
@@ -290,7 +290,7 @@ border-color: #fff;
   #home-primary{
     .slide-text{
       background: transparent;
-      padding: 105px 99px 235px;
+      padding: 111px 99px 229px;
     }
   }
 }
@@ -558,12 +558,24 @@ border-color: #fff;
     z-index: 2;
   }
 }
-
+.wrapBG{
+  position: absolute;
+  right:0;
+  left:0;
+  width: 1950px;
+  height: 716px;
+}
 .bg-home{
   position: absolute;
-  left: 0;
+  right: 0;
   top:0;
   z-index: 0;
-  width: 1367px;
-  height: 716px;
+  width: 1950px;
+  height: 824px;
+}
+.single-portfolio-detail.single-right .entry-content p, .single-portfolio-detail.single-right .portfolio-meta-value{
+    font-family: 'Rokkitt', serif;
+    font-weight: 400;
+    color: #666;
+    line-height: 24px;
 }

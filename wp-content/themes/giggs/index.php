@@ -3,7 +3,9 @@
 	<div id="content" class="site-content clearfix">
 		<!--data-center="background-position: right 0" data-top-bottom="background-position: right 150px" data-bottom-top="background-position: right -100px"-->
 		<div id="home-primary" class="homePage clearfix" >
-			<div class="bg-home" data-center="background-position: right 0px" data-top-bottom="background-position: right 140px" data-bottom-top="background-position: right 0px"></div>
+			<div class="wrapBG" data-center="top: -95px" data-top-bottom="top: 600px" data-bottom-top="top: -95px">
+				<div class="bg-home" ></div>
+			</div>
 			<div class="slide-text">
 				<div class="txt-home">
 					<?php

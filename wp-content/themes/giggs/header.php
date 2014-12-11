@@ -23,6 +23,8 @@
 <link rel='stylesheet' id='flexslider-css'  href='assets/css/flexslider.css?ver=4.0' type='text/css' media='all' />
 
 <link rel='stylesheet' href='css/all.css' type='text/css'/>
+<script type='text/javascript' src='assets/js/jquery-1.11.1.min.js'></script>
+<script src="js/fresco.js"></script>
 
 <link rel='stylesheet' id='checkpoint-montserrat-css'  href='http://fonts.googleapis.com/css?family=Montserrat%3A400%2C700&#038;ver=4.0' type='text/css' media='all' />
 <link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700' rel='stylesheet' type='text/css'>
@@ -35,8 +37,8 @@
 		body #home-primary .bg-home{
 			background: url(images/cards.jpg) no-repeat;
 			background-repeat: no-repeat;
-			background-position: right 0px;
-			background-attachment: fixed;
+			background-position: -55px -36px;
+			background-attachment: scroll;
 		}
 		<?php }	?>
 	</style>
