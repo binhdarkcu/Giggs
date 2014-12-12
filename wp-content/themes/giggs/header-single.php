@@ -22,6 +22,7 @@
 <link rel='stylesheet' id='flexslider-css'  href='assets/css/flexslider.css?ver=4.0' type='text/css' media='all' />
 
 <link rel='stylesheet' href='css/all.css' type='text/css'/>
+<script type='text/javascript' src='assets/js/jquery-1.11.1.min.js'></script>
 
 <link rel='stylesheet' id='checkpoint-montserrat-css'  href='http://fonts.googleapis.com/css?family=Montserrat%3A400%2C700&#038;ver=4.0' type='text/css' media='all' />
 <link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700' rel='stylesheet' type='text/css'>
