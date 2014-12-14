@@ -14,7 +14,9 @@ var siteMain = (function() {
 			respone();
 		});
 		//createScrolr();
-		parallaxHome();
+		if(isDesktop){
+			parallaxHome();
+		}
 	}
 	
 	
@@ -41,13 +43,13 @@ var siteMain = (function() {
 		    	console.log($(this).scrollTop());
 		        //Scrolling Down
 		        jQuery('.wrapBG').css({'top':$(this).scrollTop()});
-		        jQuery('#portfolio').css({'margin-top':-$(this).scrollTop()});
+		        jQuery('.content-home #portfolio').css({'margin-top':-$(this).scrollTop()});
 		        //jQuery('#home-primary .slide-text').css({'top' : - $(this).scrollTop() + 90 });
 		    } else {
 		       //console.log($(this).scrollTop());
 		       //Scrolling Up
 		       jQuery('.wrapBG').css({'top':$(this).scrollTop()},100);
-		       jQuery('#portfolio').css({'margin-top':-$(this).scrollTop()});
+		       jQuery('.content-home #portfolio').css({'margin-top':-$(this).scrollTop()});
 		       //jQuery('#home-primary .slide-text').css({'top' : - $(this).scrollTop() });
 		    }
 		    iScrollPos = iCurScrollPos;

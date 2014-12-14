@@ -19,8 +19,11 @@
     background: url(../images/bg-cards.jpg) repeat;
     background-size: contain;
   }
-  .home #home-primary .slide-text{
-   
+  
+}
+@media only screen and (min-width: 1366px) and (max-width: 4000px) {
+  .aboutPage ul.socialAbout li a{
+    width: 49px;
+    height: 49px;
   }
 }
-

@@ -68,9 +68,9 @@
 						Project									
 						<span class="portfolio-meta-value"><?php echo $port_projects;?></span>
 					</span><!-- end .portfolio-meta-types -->
-		
-					<a target="_blank" class="launch" href="<?php if(!empty($port_projectlink)) echo $port_projectlink; else echo'javascript:void(0)';?>">Launch Project</a>
-					
+					<?php if(!empty($port_projectlink)) {?>
+					<a target="_blank" class="launch" href="<?php echo $port_projectlink;?>">Launch Project</a>
+					<?php }?>
 				</div><!-- end .portfolio-meta -->
 			
 			</div><!-- end .single-portfolio-detail -->

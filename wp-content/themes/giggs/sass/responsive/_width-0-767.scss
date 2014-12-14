@@ -107,6 +107,46 @@
 
 
 body.mobile{
+  #sidebar .contactDetail .rowSocial ul li a{
+    width: 49px;
+    height: 49px;
+    
+    &.linkv{
+      background: url(../assets/images/ab-linkv.png) no-repeat;
+      &:hover{
+        background: url(../assets/images/ab-linkv.png) no-repeat;  
+      }  
+    }
+    &.linkbe{
+      background: url(../assets/images/ab-linkbe.png) no-repeat;
+      &:hover{
+        background: url(../assets/images/ab-linkbe.png) no-repeat;
+      }
+    } 
+    &.linkin{
+      background: url(../assets/images/ab-linkin.png) no-repeat;
+       &:hover{
+        background: url(../assets/images/ab-linkin.png) no-repeat;
+      }
+    } 
+    &.linkflickr{
+      background: url(../assets/images/ab-linkdot.png) no-repeat;
+      &:hover{
+        background: url(../assets/images/ab-linkdot.png) no-repeat;
+      }
+    } 
+    &.linkskype{
+      background: url(../assets/images/ab-skype.png) no-repeat;
+       &:hover{
+        background: url(../assets/images/ab-skype.png) no-repeat;
+      }
+    }   
+  }
+  .aboutPage ul.socialAbout li a{
+    width: 49px;
+    height: 49px;
+    margin-right:10px; 
+  }
    .contactPage .content-area div.areaRow span.lb{
     font-size: 12px;
   }
