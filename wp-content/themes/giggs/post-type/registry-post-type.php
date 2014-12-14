@@ -109,7 +109,7 @@ function register_custom_post_about_lightbox() {
     'hierarchical' => false,
     'menu_position' => 5,  
   	'taxonomies'		=> array(''),
-    'supports' => array('title','thumbnail'),
+    'supports' => array('title'),
     
   ); 
  register_post_type('about-lightbox',$news);

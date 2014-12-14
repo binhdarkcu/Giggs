@@ -90,6 +90,13 @@
    text-align: center;
  } 
 }
+.site-branding a{
+  width: 376px;
+  display: block;
+  img{
+    width: 100%;
+  }
+} 
 .single-portfolio-items .page-header{
   padding: 111px 5%;
   position: relative;
@@ -296,6 +303,7 @@ border-color: #fff;
 }
 #portfolio .portfolio-items{
   .portfolio-thumb{
+    overflow: hidden;
     .portfolio-thumb-overlay{
       display: block;
       .overlay-inner{
@@ -307,6 +315,9 @@ border-color: #fff;
         -moz-transition: all 0.5s;
            opacity: 0;
           filter:alpha(opacity=0);
+          width: 101%;
+          height: 101%;
+          left: -3px;
        }
     }
   }
@@ -546,7 +557,7 @@ border-color: #fff;
   margin-right: 90px;
 }
 
-.aboutLightBox{
+.gestaltenBox, .indexbookBox{
   display: none;
 }
 .content-home{
@@ -559,6 +570,22 @@ border-color: #fff;
   .slide-text{
     position: relative;
     z-index: 2;
+  }
+}
+.fr-caption{
+  font-family: 'Rokkitt', serif;
+  font-size: 16px;
+  color: #b3b3b3;
+  div{
+    float: left;
+  }
+  p{
+    float: right;
+    margin-bottom: 0;
+    a{
+      text-decoration: underline;
+      color: #fcfcfc;
+    }
   }
 }
 .wrapBG{

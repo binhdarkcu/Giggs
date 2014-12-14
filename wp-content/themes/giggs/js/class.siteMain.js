@@ -20,13 +20,18 @@ var siteMain = (function() {
 	
 	function openLightBox(){
 		//jQuery( '.aboutLightBox a' ).swipebox();
-		jQuery('a.lightboxLink').bind("click", (function (e) {
+		jQuery('a.gestaltenLink').bind("click", (function (e) {
 			e.preventDefault();
 			//jQuery('.aboutLightBox').css({'display':'block'});
-			jQuery( '.aboutLightBox a' ).first().trigger('click');
+			jQuery( '.gestaltenBox a' ).first().trigger('click');
 			//Fresco.show({ options: { ui: 'inside' } });
 		}));
-		
+		jQuery('a.indexbookLink').bind("click", (function (e) {
+			e.preventDefault();
+			//jQuery('.aboutLightBox').css({'display':'block'});
+			jQuery( '.indexbookBox a' ).first().trigger('click');
+			//Fresco.show({ options: { ui: 'inside' } });
+		}));
 	}
 	var iScrollPos = 0;
 	function parallaxHome(){

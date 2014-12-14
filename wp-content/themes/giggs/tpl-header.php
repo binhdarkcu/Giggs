@@ -5,7 +5,7 @@
 			<div id="header-primary" class="clearfix">
 
 				<section class="site-branding">
-					<a href="<?php bloginfo('home');?>">
+					<a href="<?php bloginfo('home');?>" class="logo">
 						<img src="assets/images/logo.png" alt="Home" />
 					</a>
 				</section><!-- end .site-branding -->	

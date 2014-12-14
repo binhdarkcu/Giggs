@@ -71,12 +71,17 @@ $meta_boxes[] =array(
    		array(
 			'name'             => 'Link',
 			'id'               => "{$prefix}ab_lightbox_link",
-			'type'             => 'textarea'
+			'type'             => 'wysiwyg'
 		),
 		array(
 			'name'             => 'Author',
 			'id'               => "{$prefix}ab_lightbox_author",
 			'type'             => 'textarea'
+		),
+		array(
+			'name'             => 'Images',
+			'id'               => "{$prefix}ab_lightbox_images",
+			'type'             => 'plupload_image'
 		)
 	 )
 );

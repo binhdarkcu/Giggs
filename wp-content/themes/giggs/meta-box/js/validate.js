@@ -1,23 +1,26 @@
-jQuery( document ).ready( function ( $ )
+jQuery( function ( $ )
 {
+	'use strict';
+
+	var $form = $( '#post' );
+
 	// Required field styling
-	$.each( rwmb.validationOptions.rules, function( k, v )
+	$.each( rwmb.validationOptions.rules, function ( k, v )
 	{
 		if ( v['required'] )
 		{
-			var $label = $( '#' + k ).parent().siblings( '.rwmb-label' );
-			$label.find( 'label' ).css( 'font-weight','bold' );
-			$label.append( '<span class="required">*</span>' );
+			$( '#' + k ).parent().siblings( '.rwmb-label' ).addClass( 'required' ).append( '<span>*</span>' );
 		}
 	} );
 
-	rwmb.validationOptions.invalidHandler = function( form, validator )
+	rwmb.validationOptions.invalidHandler = function ()
 	{
 		// Re-enable the submit ( publish/update ) button and hide the ajax indicator
 		$( '#publish' ).removeClass( 'button-primary-disabled' );
-		$( '#ajax-loading' ).attr( 'style','' );
-		$( 'form#post' ).siblings( '#message' ).remove();
-		$( 'form#post' ).before( '<div id="message" class="error"><p>' + rwmb.summaryMessage  + '</p></div>' );
+		$( '#ajax-loading' ).attr( 'style', '' );
+		$form.siblings( '#message' ).remove();
+		$form.before( '<div id="message" class="error"><p>' + rwmb.summaryMessage + '</p></div>' );
 	};
-	$( 'form#post' ).validate( rwmb.validationOptions );
+
+	$form.validate( rwmb.validationOptions );
 } );
