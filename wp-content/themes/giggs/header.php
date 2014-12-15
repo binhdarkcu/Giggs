@@ -55,7 +55,7 @@
 <?php //wp_head();?>
 </head>
 
-<body id="skrollr-body" class="home page page-id-231 page-template page-template-page-templateshomepage-php custom-background <?php if($iMobile == true) echo 'mobile';?>">
+<body id="skrollr-body" class="home page page-id-231 page-template page-template-page-templateshomepage-php custom-background <?php if($iTablet == true) echo 'tablet';?> <?php if($iPad == true) echo 'ipad';?> <?php if($iMobile == true) echo 'mobile';?> <?php if($isDesktop == true) echo 'desktop';?>">
 
 <div id="page" class="hfeed site">
 <?php get_template_part('tpl','header');?>

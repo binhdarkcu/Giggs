@@ -19,14 +19,12 @@
 				<div class="portfolio-thumb">
 	
 					<a href="<?php echo get_the_permalink($portfolio->ID);?>">
-						<?php if($isDesktop) { ?>
 						<span class="portfolio-thumb-overlay">
 							<div class="overlays"></div>
 							<div class="overlay-inner">
 								<h1><?php echo get_the_title($portfolio->ID);?><br /><span>View Project</span></h1>
 							</div><!-- end .overlay-inner -->
 						</span>					
-						<?php }?>
 						<img width="1000" height="700" src="<?php echo $url[0];?>" class="attachment-portfolio-thumb wp-post-image" alt="<?php the_title();?>" />				
 					</a>
 							

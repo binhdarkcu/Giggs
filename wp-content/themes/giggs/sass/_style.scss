@@ -1,4 +1,9 @@
 
+.mobile, .ipad, .tablet{
+  #portfolio .portfolio-items .portfolio-thumb .portfolio-thumb-overlay{
+    display: none;
+  }
+}
 /*----------------------------------------------------------------------------*
   * General Options
   *----------------------------------------------------------------------------*/
