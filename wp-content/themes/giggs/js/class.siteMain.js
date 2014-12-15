@@ -22,18 +22,18 @@ var siteMain = (function() {
 	
 	function openLightBox(){
 		//jQuery( '.aboutLightBox a' ).swipebox();
-		jQuery('a.gestaltenLink').bind("click", (function (e) {
-			e.preventDefault();
+		jQuery('a.gestaltenLink').click(function (e) {
+			//e.preventDefault();
 			//jQuery('.aboutLightBox').css({'display':'block'});
 			jQuery( '.gestaltenBox a' ).first().trigger('click');
 			//Fresco.show({ options: { ui: 'inside' } });
-		}));
-		jQuery('a.indexbookLink').bind("click", (function (e) {
-			e.preventDefault();
+		});
+		jQuery('a.indexbookLink').click(function (e) {
+			//e.preventDefault();
 			//jQuery('.aboutLightBox').css({'display':'block'});
 			jQuery( '.indexbookBox a' ).first().trigger('click');
 			//Fresco.show({ options: { ui: 'inside' } });
-		}));
+		});
 	}
 	var iScrollPos = 0;
 	function parallaxHome(){

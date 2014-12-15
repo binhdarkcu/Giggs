@@ -498,6 +498,9 @@ border-color: #fff;
   display: none;
 }
 .aboutPage{
+  a{
+    cursor: pointer;
+  }
   ul.socialAbout{
     list-style-type:none;
     padding-top: 0;
