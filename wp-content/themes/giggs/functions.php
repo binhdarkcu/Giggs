@@ -30,8 +30,8 @@
 	//change label post
 	include 'inc/change_label_post.php';
 	
-	//credits funciton
-	//include 'inc/load_credits.php';
+	//cache function
+	include TEMPLATEPATH .'/inc/disk_cached.php' ;
 	
 	
 	//remove p tag
