@@ -48,7 +48,7 @@
 
 				
 			<div class="single-portfolio-media">
-				<?php echo get_the_content($post->ID);?>		
+				<?php echo the_content();//get_the_content($post->ID);?>		
 			</div><!-- end .single-portfolio-media -->				
 			<div class="single-portfolio-detail single-right clearfix">
 			

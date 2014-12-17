@@ -36,6 +36,7 @@
 	var isDesktop = <?php echo $isDesktop == TRUE ? 'true':'false' ?>;
 	var iSingle = <?php echo (is_single()) ? 'true':'false';?>;
 </script>
+<?php wp_head();?>
 </head>
 
 <body id="skrollr-body" class="single single-portfolio-items postid-259 custom-background <?php if($iMobile == true) echo 'mobile';?>">

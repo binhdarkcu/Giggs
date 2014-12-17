@@ -12,7 +12,7 @@
 	
 	//add theme support
 	add_theme_support('post-thumbnails',array('post','page','services','portfolio','blogs','about-lightbox'));
-
+	
 	//register meta box
 	// Initialize the metabox class
 	//metabox

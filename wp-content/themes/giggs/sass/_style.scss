@@ -1,4 +1,13 @@
+.wp-video, .wp-video-shortcode {
+  max-width: 100%;
+  width: 100%!important;
+  height: 100%!important;
+  float: left;
+}
 
+.wp-audio-shortcode {
+  max-width: 100%;
+}
 .mobile, .ipad, .tablet{
   #portfolio .portfolio-items .portfolio-thumb .portfolio-thumb-overlay{
     display: none;
