@@ -394,33 +394,34 @@ border-color: #fff;
              transition: all 0.2s;
             -webkit-transition: all 0.2s;
             -moz-transition: all 0.2s;
+            background-size: contain!important;
             &.linkv{
-              background: url(../assets/images/link-v.png) no-repeat;
+              background: url(../assets/images/ab-linkv.png) no-repeat;
               &:hover{
-                background: url(../assets/images/link-v-hover.png) no-repeat;
+                background: url(../assets/images/ab-linkv-hover.png) no-repeat;
               }
             }
             &.linkbe{
-              background: url(../assets/images/link-be.png) no-repeat;
+              background: url(../assets/images/ab-linkbe.png) no-repeat;
               &:hover{
-                background: url(../assets/images/link-be-hover.png) no-repeat;
+                background: url(../assets/images/ab-linkbe-hover.png) no-repeat;
               }
             } 
             &.linkin{
-              background: url(../assets/images/link-in.png) no-repeat;
+              background: url(../assets/images/ab-linkin.png) no-repeat;
                &:hover{
-                background: url(../assets/images/link-in-hover.png) no-repeat;
+                background: url(../assets/images/ab-linkin-hover.png) no-repeat;
               }
             } 
             &.linkflickr{
-              background: url(../assets/images/link-dot.png) no-repeat;
+              background: url(../assets/images/ab-linkdot.png) no-repeat;
               &:hover{
-                background: url(../assets/images/link-dot-hover.png) no-repeat;
+                background: url(../assets/images/ab-linkdot-hover.png) no-repeat;
               }
             } 
             &.linkskype{
               background: url(../assets/images/link-skype.png) no-repeat;
-               &:hover{
+               &:hover, &.active{
                 background: url(../assets/images/link-skype-hover.png) no-repeat;
               }
             }   

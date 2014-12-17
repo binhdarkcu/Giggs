@@ -33,8 +33,14 @@
 					<a href="<?php echo $linkflickr;?>" target="_blank" class="linkflickr"></a>
 				</li>
 				<li>
-					<a href="skype:<?php echo $linkskype;?>?chat" class="linkskype"></a>
+					
+					<a href="skype:<?php echo $linkskype;?>?chat" class="linkskype active"></a>
 				</li>
+				<style>
+					#SkypeButton_Call_yvesfaesdupont_1{
+						position: absolute;
+					}
+				</style>
 			</ul>
 		</div>
 	</div>

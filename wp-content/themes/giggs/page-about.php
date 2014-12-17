@@ -54,12 +54,12 @@ get_header();?>
 								</li>
 								
 								<li>
+									<a href="<?php echo $linkflickr;?>" target="_blank" class="linkflickr"></a>
+								</li>
+								<li>
 									<a href="<?php echo $linkbe;?>" target="_blank" class="linkbe"></a>
 								</li>
 								
-								<li>
-									<a href="<?php echo $linkflickr;?>" target="_blank" class="linkflickr"></a>
-								</li>
 								<li>
 									<a href="skype:<?php echo $linkvine;?>?chat" class="linkv"></a>
 								</li>

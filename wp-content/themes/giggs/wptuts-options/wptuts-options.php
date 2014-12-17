@@ -42,7 +42,7 @@
 	            <!-- If we have any error by submiting the form, they will appear here -->
 	            <?php settings_errors( 'wptuts-settings-errors' ); ?>
 	 
-	            <form id="form-wptuts-options" action="options.php" method="post" enctype="multipart/form-data">
+	            <form id="form-wptuts-options" style="display: none;" action="options.php" method="post" enctype="multipart/form-data">
 	 
 	                <?php
 	                    settings_fields('theme_wptuts_options');
@@ -129,7 +129,7 @@
 	                   <input name="url_email" size="65" style="border-style:inset;border-width: 2px;color: #000;background-color: #f1f1f1" value="<?php echo esc_attr( get_option('url_email') ); ?>"/><br /><br />
 	       			 <!--title fr-->
 	       			 
-	       			 <label for="url_vine">Vine</label><br/>
+	       			 <label for="url_vine">Vimeo</label><br/>
 	                   <input name="url_vine" size="65" style="border-style:inset;border-width: 2px;color: #000;background-color: #f1f1f1" value="<?php echo esc_attr( get_option('url_vine') ); ?>"/><br /><br />
 	       			 
 	              	   <label for="url_be">Behance</label><br/>

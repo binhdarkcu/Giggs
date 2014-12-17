@@ -1,4 +1,8 @@
 @media only screen and (min-width: 0px) and (max-width: 770px) {
+  .aboutPage ul.socialAbout li a{
+    width: 55px;
+    height: 55px;
+  }
   body{
     min-width: 600px;
      -webkit-text-size-adjust: none;
@@ -143,8 +147,8 @@ body.mobile{
     }   
   }
   .aboutPage ul.socialAbout li a{
-    width: 49px;
-    height: 49px;
+    width: 55px;
+    height: 55px;
     margin-right:10px; 
   }
    .contactPage .content-area div.areaRow span.lb{
