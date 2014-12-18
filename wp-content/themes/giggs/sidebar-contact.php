@@ -8,40 +8,15 @@
 		</div>
 		<div class="row">
 			<h3>Skype</h3>
-			<span>yvesfaesdupont</span>
+			<a href="skype:<?php echo $linkskype;?>?chat" class="nickskye"><span>yvesfaesdupont</span></a>
 		</div>
-		<div class="row rowSocial">
-			<h3>On the web</h3>
-			<?php
-				$linkv = (get_option('url_vine') != '') ? get_option('url_vine')  : 'javascript:void(0);';
-				$linkbe = (get_option('url_be') != '')? get_option('url_be') : 'javascript:void(0);';
-				$linkin = (get_option('url_linkin') != '') ? get_option('url_linkin') : 'javascript:void(0);';
-				$linkflickr = (get_option('url_flickr') != '') ? get_option('url_flickr') : 'javascript:void(0);';
-				$linkskype = (get_option('url_skype') != '') ? get_option('url_skype') : 'javascript:void(0);';
-			?>
-			<ul>
-				<li>
-					<a href="<?php echo $linkv;?>" target="_blank" class="linkv"></a>
-				</li>
-				<li>
-					<a href="<?php echo $linkbe;?>" target="_blank" class="linkbe"></a>
-				</li>
-				<li>
-					<a href="<?php echo $linkin;?>" target="_blank" class="linkin"></a>
-				</li>
-				<li>
-					<a href="<?php echo $linkflickr;?>" target="_blank" class="linkflickr"></a>
-				</li>
-				<li>
-					
-					<a href="skype:<?php echo $linkskype;?>?chat" class="linkskype active"></a>
-				</li>
-				<style>
-					#SkypeButton_Call_yvesfaesdupont_1{
-						position: absolute;
-					}
-				</style>
-			</ul>
-		</div>
+		<style>
+			#sidebar .contactDetail a.nickskye{
+				text-decoration: none;
+			}
+			#sidebar .contactDetail a.nickskye:hover{
+				text-decoration: underline;
+			}
+		</style>
 	</div>
 </div><!-- end #sidebar -->
