@@ -3,11 +3,24 @@ var siteMain = (function() {
 	//PARAMATER
 	var setting = {
 		font	:	13,
-		w		:	1360
+		w		:	1360,
+		wWindow		:	0,
+		hWindow		:	0,
+		wShowVideo	:	0,
+		hShowVideo	:	0,
+		wMeta		: 	0,
+		hMeta		: 	0,
+	}
+	
+	var items = {
+		wVideo		:	0,
+		hVideo		:	0,
 	}
 	var s = '';
 	//INIT
 	function init(){
+		setting.wMeta = 1280;
+		setting.hMeta = 720;
 		respone();
 		jQuery(window).resize(function(){
 			responsiveAbout();
@@ -17,9 +30,29 @@ var siteMain = (function() {
 		if(isDesktop){
 			parallaxHome();
 		}
+		
 	}
 	
-	
+	function setFullsreenVideoBG(w, h){
+		setting.wWindow = $('.single-portfolio-media').width();
+		setting.hWindow = $('.video-js').height();
+		
+		setting.wShowVideo = setting.wWindow;
+		setting.hShowVideo = setting.hWindow;
+		
+		//Get rate between video display and width video
+		$wRate = setting.wShowVideo/w;
+		$hRate = setting.hShowVideo/h;
+		
+		if($wRate > $hRate) $rate = $wRate;
+		else $rate = $hRate;
+		
+		setting.wVideo = $rate * w ;
+		setting.hVideo = $rate * h ;
+		
+		$('.video-js, .vjs-poster,.video-js .vjs-tech, #videoBG_html5_api').css({'width': setting.wVideo, 'height': setting.hVideo});
+		//setvideo_align_center();	
+	}
 	function openLightBox(){
 		//jQuery( '.aboutLightBox a' ).swipebox();
 		jQuery('a.gestaltenLink').click(function (e) {

@@ -111,7 +111,13 @@
 
 
 body.mobile{
-  
+  .wp-video{
+    margin-bottom: 25px;
+  }
+  .wp-video, .wp-video-shortcode{
+    min-height: 150px;
+    height: 150px!important;
+  }
   #sidebar .contactDetail .rowSocial ul li a{
     width: 49px;
     height: 49px;
