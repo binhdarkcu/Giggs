@@ -24,7 +24,7 @@ jQuery(document).ready(function() {
 					jQuery('body').animate({'right':jQuery('#sidr').width()}, 500);
 					iC = 0;
 				}else{
-					jQuery('#sidr').show().animate({'right': - jQuery('#sidr').width()+10}, 500);
+					jQuery('#sidr').show().animate({'right': - jQuery('#sidr').width()-20}, 500);
 					jQuery('body').animate({'right':0}, 500,function(){
 						jQuery('body').removeAttr('style');
 					});
