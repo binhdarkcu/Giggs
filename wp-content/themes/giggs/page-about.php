@@ -61,7 +61,7 @@ get_header();?>
 									<a href="<?php echo $linkflickr;?>" target="_blank" class="linkflickr"></a>
 								</li>
 								<li>
-									<a href="<?php echo $linkvine;?>" class="linkv"></a>
+									<a href="<?php echo $linkvine;?>" target="_blank" class="linkv"></a>
 								</li>
 							</ul>
 						<?php }?>
