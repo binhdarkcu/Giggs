@@ -22,7 +22,7 @@ define('DB_NAME', 'kiokarma_2');
 define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', '');
+define('DB_PASSWORD', 'admin');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
@@ -75,6 +75,13 @@ define('WP_DEBUG', false);
 /** Absolute path to the WordPress directory. */
 if ( !defined('ABSPATH') )
 	define('ABSPATH', dirname(__FILE__) . '/');
+
+	$domainName =  isset($_SERVER['SERVER_NAME']) && $_SERVER['SERVER_NAME'] != "" ? $_SERVER['SERVER_NAME'] : "" ;
+	if($domainName == "")
+		$domainName =  isset($_SERVER['HTTP_HOST']) && $_SERVER['HTTP_HOST'] != "" ? $_SERVER['HTTP_HOST'] : "" ;
+
+define('WP_HOME','http://'.$domainName.'/PHP/BLISS/www/YVES/kiokarma/sourcecode/BE');
+define('WP_SITEURL','http://'.$domainName.'/PHP/BLISS/www/YVES/kiokarma/sourcecode/BE');
 
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');

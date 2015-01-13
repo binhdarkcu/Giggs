@@ -13,7 +13,6 @@
             </ul>
           </li>
           <li id="menu-item-21" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21"><a href="http://demo.themerain.com/skills/contact/">Contact</a></li>
-          <li id="menu-item-28" class="button menu-item menu-item-type-custom menu-item-object-custom menu-item-28"><a href="http://themeforest.net/item/skills-portfolio-for-freelancers-agencies/8317998">Purchase</a></li>
         </ul>
       </div>
       <button class="menu-toggle"></button>
