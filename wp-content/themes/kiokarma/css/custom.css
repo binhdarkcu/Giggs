@@ -1,0 +1,32 @@
+a, .logo-text:hover, .post-title a:hover, .filter-area .active:after, .comment-author a:hover {
+	color: #58cb8e
+}
+button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover, .post-more:hover, .post-tags a:hover {
+	background-color: #58cb8e
+}
+.post-tags a:hover:before {
+	border-right-color: #58cb8e
+}
+.loader-mark {
+	border-top-color: #58cb8e
+}
+.post-thumbnail-inner a:after, .project-thumbnail a:after {
+	background: linear-gradient(#58cb8e, #bbf496)
+}
+
+.fluid-width-video-wrapper {
+	width: 100%;
+	position: relative;
+	padding: 0;
+}
+.fluid-width-video-wrapper iframe, .fluid-width-video-wrapper object, .fluid-width-video-wrapper embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.fancybox-margin {
+	margin-right: 17px;
+}
