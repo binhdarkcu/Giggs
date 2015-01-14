@@ -7,5 +7,18 @@
       </div>
       <button class="menu-toggle"></button>
     </nav>
-    <div class="social-icons"><a href="#"><i class="si-twitter"></i></a><a href="#"><i class="si-behance"></i></a><a href="#"><i class="si-instagram"></i></a><a href="#"><i class="si-youtube"></i></a><a href="#"><i class="si-vimeo"></i></a></div>
+    <div class="social-icons">
+    	<?php
+			$linkv = (get_option('url_vine') != '') ? get_option('url_vine')  : 'javascript:void(0);';
+			$linkbe = (get_option('url_be') != '')? get_option('url_be') : 'javascript:void(0);';
+			$linkin = (get_option('url_linkin') != '') ? get_option('url_linkin') : 'javascript:void(0);';
+			$linkflickr = (get_option('url_flickr') != '') ? get_option('url_flickr') : 'javascript:void(0);';
+			$linkvine = (get_option('url_vine') != '') ? get_option('url_vine') : 'javascript:void(0);';
+		?>
+    	<a href="#"><i class="si-twitter"></i></a>
+    	<a href="<?php echo $linkbe;?>"><i class="si-behance"></i></a>
+    	<a href="<?php echo $linkvine;?>"><i class="si-instagram"></i></a>
+    	<a href="#"><i class="si-youtube"></i></a>
+    	<a href="<?php echo $linkv;?>"><i class="si-vimeo"></i></a>
+    </div>
   </header>
