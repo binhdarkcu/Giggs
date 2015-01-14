@@ -30,3 +30,25 @@ button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type=
 .fancybox-margin {
 	margin-right: 17px;
 }
+.page-header{
+	
+}
+.gallery-item .gallery-icon{
+	text-align: center;
+}
+.contact-area input[type="text"], .contact-area input[type="email"]{
+	width: 100%;
+}
+.page-sidebar .widget-title{
+	margin-bottom: 15px;
+}
+.site-logo{
+	display: inline-block;
+	
+	a{
+		
+		img{
+			width: 100%;
+		}
+	}
+}

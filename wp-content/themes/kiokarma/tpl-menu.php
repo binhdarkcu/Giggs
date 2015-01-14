@@ -7,8 +7,8 @@
 		'container'       => '',
 		'container_class' => '',
 		'container_id'    => '',
-		'menu_class'      => 'sf-menu clearfix',
-		'menu_id'         => 'primary-menu',
+		'menu_class'      => 'nav-menu',
+		'menu_id'         => 'menu-menu',
 		'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
 	);
 	
