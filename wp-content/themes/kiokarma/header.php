@@ -38,3 +38,4 @@
 <?php } else {?>
 <body class="home page page-id-12 page-template page-template-template-portfolio page-template-template-portfolio-php">
 <?php }?>
+<div id="loader" class="loader"><div class="loader-mark"></div></div>
