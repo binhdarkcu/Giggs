@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en-US" class="">
 <head>
 <meta charset="UTF-8">
@@ -17,6 +18,20 @@
 <link rel="stylesheet" type="text/css" href="css/custom.css" media="all">
 <link rel="stylesheet" type="text/css" href="css/style.css" media="all">
 <script type="text/javascript" src="js/jquery.js"></script>
+<script src="js/fresco.js"></script>
+<script type="text/javascript" src="js/class.siteMain.js"></script>
+
+<link rel="stylesheet" type="text/css" href="css/fresco.css" media="all">
+
+<script type="text/javascript">
+	var LANG = "<?php echo $lang ?>";
+	var ROOT = "<?php echo ROOT_WS_NAME ?>";
+	var iMobile = <?php echo $iMobile == TRUE ? 'true':'false' ?>;
+	var iPad = <?php echo $iPad == TRUE ? 'true':'false' ?>;
+	var iTablet = <?php echo $iTablet == TRUE ? 'true':'false' ?>;
+	var isDesktop = <?php echo $isDesktop == TRUE ? 'true':'false' ?>;
+	var iSingle = <?php echo (is_single()) ? 'true':'false';?>;
+</script>
 </head>
 <?php if(is_page('contact') || is_single()){?>
 <body class="page page-id-8 page-template page-template-template-contact page-template-template-contact-php">	

@@ -1,3 +1,4 @@
+
 a, .logo-text:hover, .post-title a:hover, .filter-area .active:after, .comment-author a:hover {
 	color: #58cb8e
 }
@@ -50,5 +51,141 @@ button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type=
 		img{
 			width: 100%;
 		}
+	}
+}
+
+
+#aboutPage .service{
+  width: 50%;
+  padding: 0;
+   background: #eee;
+   float: left;
+}
+#aboutPage .service.mobile{
+ display: none; 
+}
+#aboutPage .service.hasImg{
+	padding:0;
+	img{
+	  width: 100%;
+	}
+}
+#aboutPage .service h3{
+    letter-spacing: 0;
+    font-size: 23px;
+	line-height: 25px;
+    margin-bottom: 15px;
+    color: #333;
+    text-transform: none;
+}
+  
+#aboutPage .service .pad{
+     text-align: left;
+    padding: 8%;
+}
+#aboutPage .service p{
+      font-weight: 400;
+      padding: 0;
+      padding-bottom: 1.2em;
+      margin-bottom:0;
+      font-size: 14px;
+      line-height: 1.1;
+      color: #666;
+}
+ 
+#aboutPage .service.service-3 p{
+	text-align: center;
+}
+#aboutPage .service.service-3 p.line-1{
+      font-size: 14px;
+      color: #000;
+      font-style: italic;
+}
+#aboutPage .service.service-3 span{
+      display: block;
+}
+#aboutPage .service.service-3 p.line-2{
+      font-size: 14px;
+      color: #666;
+}
+#aboutPage .service.service-3 a{
+        color: #333;
+}
+.aboutPage ul.socialAbout {
+	list-style-type: none;
+	padding-top: 0;
+	display: table;
+	margin: -5px auto;
+}
+.aboutPage ul.socialAbout li {
+	display: inline-block;
+	margin-right: 0.615em;
+}
+.aboutPage ul.socialAbout li a {
+	width: 37px;
+	height: 37px;
+	display: block;
+	transition: all 0.2s;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	background-size: cover !important;
+	padding: 0;
+}
+.aboutPage ul.socialAbout li a.linkin {
+	background: url(../images/ab-linkin.png) no-repeat;
+}
+.aboutPage ul.socialAbout li a.linkin:hover {
+	background: url(../images/ab-linkin-hover.png) no-repeat;
+}
+.aboutPage ul.socialAbout li a.linkbe {
+	background: url(../images/ab-linkbe.png) no-repeat;
+}
+.aboutPage ul.socialAbout li a.linkbe:hover {
+	background: url(../images/ab-linkbe-hover.png) no-repeat;
+}
+.aboutPage ul.socialAbout li a.linkflickr {
+	background: url(../images/ab-linkdot.png) no-repeat;
+}
+.aboutPage ul.socialAbout li a.linkflickr:hover {
+	background: url(../images/ab-linkdot-hover.png) no-repeat;
+}
+.aboutPage ul.socialAbout li a.linkv {
+	background: url(../images/ab-linkv.png) no-repeat;
+}
+.aboutPage ul.socialAbout li a.linkv:hover{
+	background: url(../images/ab-linkv-hover.png) no-repeat;
+}
+.gestaltenBox, .indexbookBox{
+	display: none;
+}
+
+
+@media only screen and (max-width: 980px){
+	#aboutPage .service{
+		width: 100%;
+		height: auto!important;
+	}
+	#aboutPage .service .alignleft{
+		margin:0;
+	}
+	#aboutPage .service.mobile{
+		display: block;
+	}
+	#aboutPage .service .pad{
+		padding: 8% 8% 2% 8%;
+	}
+	#aboutPage  #service_text_mobile_1 .pad{
+		padding-top: 0;
+	}
+	#aboutPage .service.service-3 .pad{
+		padding-top: 0;
+		padding-bottom: 4%;
+	}
+	.h6Client{
+		padding-top: 25px;
+		clear: both;
+	}
+	#aboutPage .service.hasImg.normal{
+		display: none;
 	}
 }
