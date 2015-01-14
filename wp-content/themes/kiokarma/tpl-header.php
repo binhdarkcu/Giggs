@@ -1,5 +1,5 @@
 <header class="site-header" role="banner">
-    <div class="site-logo"> <a class="logo-text" href="http://demo.themerain.com/skills/">Skills</a></div>
+    <div class="site-logo"> <a class="logo-text" href="http://kiokarma.com/">Kiokarma</a></div>
     <nav class="site-navigation" role="navigation">
       <div class="menu-menu-container">
       	<?php get_template_part('tpl','menu');?>
