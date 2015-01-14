@@ -1,4 +1,5 @@
 <?php get_header();?>
+<div id="loader" class="loader"><div class="loader-mark"></div></div>
 <div id="site" class="site">
   <?php get_template_part('tpl','header');?>
   <main class="site-main" role="main">
