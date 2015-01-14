@@ -18,7 +18,7 @@
 <link rel="stylesheet" type="text/css" href="css/style.css" media="all">
 <script type="text/javascript" src="js/jquery.js"></script>
 </head>
-<?php if(is_page('contact')){?>
+<?php if(is_page('contact') || is_single()){?>
 <body class="page page-id-8 page-template page-template-template-contact page-template-template-contact-php">	
 <?php } else {?>
 <body class="home page page-id-12 page-template page-template-template-portfolio page-template-template-portfolio-php">
