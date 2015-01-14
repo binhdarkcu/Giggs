@@ -3,15 +3,19 @@ var siteMain = (function() {
 	//PARAMATER
 	var setting = {
 		font	:	13,
-		w		:	1400
+		w		:	1600
 	};
 	var s = '';
 	//INIT
 	function init(){
-		//respone();
+		if(jQuery(window).width()>980){
+			respone();	
+		}
 		jQuery(window).resize(function(){
 			responsiveAbout();
-			//respone();
+			if(jQuery(window).width()>980){
+				respone();	
+			}
 		});
 		
 	}

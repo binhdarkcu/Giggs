@@ -72,9 +72,9 @@ button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type=
 }
 #aboutPage .service h3{
     letter-spacing: 0;
-    font-size: 23px;
-	line-height: 25px;
-    margin-bottom: 15px;
+    font-size: 3.077em;
+	line-height: 0.9em;
+    margin-bottom: 0.9em;
     color: #333;
     text-transform: none;
 }
@@ -88,7 +88,7 @@ button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type=
       padding: 0;
       padding-bottom: 1.2em;
       margin-bottom:0;
-      font-size: 14px;
+      font-size: 1.538em;
       line-height: 1.1;
       color: #666;
 }
@@ -97,7 +97,7 @@ button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type=
 	text-align: center;
 }
 #aboutPage .service.service-3 p.line-1{
-      font-size: 14px;
+      font-size: 1.538em;
       color: #000;
       font-style: italic;
 }
@@ -105,7 +105,7 @@ button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type=
       display: block;
 }
 #aboutPage .service.service-3 p.line-2{
-      font-size: 14px;
+      font-size: 1.538em;
       color: #666;
 }
 #aboutPage .service.service-3 a{
@@ -122,8 +122,8 @@ button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type=
 	margin-right: 0.615em;
 }
 .aboutPage ul.socialAbout li a {
-	width: 37px;
-	height: 37px;
+	width: 3.769em;
+	height: 3.769em;
 	display: block;
 	transition: all 0.2s;
 	-webkit-transition: all 0.2s;
@@ -161,6 +161,18 @@ button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type=
 
 
 @media only screen and (max-width: 980px){
+	#aboutPage .service h3{
+		font-size: 26px;
+	}
+	#aboutPage .service p,
+	#aboutPage .service.service-3 p.line-1,
+	#aboutPage .service.service-3 p.line-2{
+		font-size: 16px;
+	}
+	.aboutPage ul.socialAbout li a{
+		width: 37px;
+		height: 37px;
+	}
 	#aboutPage .service{
 		width: 100%;
 		height: auto!important;
