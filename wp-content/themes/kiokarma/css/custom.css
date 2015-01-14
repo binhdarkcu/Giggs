@@ -1,4 +1,15 @@
-
+.wp-video, .wp-video-shortcode {
+  max-width: 100%;
+  width: 100%!important;
+  height: 100%!important;
+  float: left;
+}
+.alignleft{
+	margin:0!important;
+}
+.aligncenter{
+	margin: 0 auto!important;
+}
 a, .logo-text:hover, .post-title a:hover, .filter-area .active:after, .comment-author a:hover {
 	color: #58cb8e
 }
@@ -54,7 +65,23 @@ button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type=
 	}
 }
 
-
+.post-navigation .div_navi{
+	position: relative;
+	padding-top: 8px;
+}
+.post-navigation .div_navi span{
+	display: block;
+	color: #bcbcbc;
+	font-size: 14px;
+	line-height: 22px;
+	position: absolute;
+	top: 11px;
+	padding-top: 1px;
+}
+.post-navigation .div_navi a{
+	padding-top: 22px;
+	position: relative;
+}
 #aboutPage .service{
   width: 50%;
   padding: 0;

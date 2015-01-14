@@ -23,6 +23,21 @@
     			<?php echo the_content();//get_the_content($post->ID);?>
     		</div>
     	</article>
+    	<nav class="post-navigation" role="navigation">
+    		<div class="div_navi">
+    			<span>Previous Post</span>
+    			<?php 
+					c2c_next_or_loop_post_link();
+				?>
+    		</div>
+    		<div class="div_navi">
+    			<span>Next Post</span>
+    			<?php
+    				c2c_previous_or_loop_post_link();
+				?> 
+    		</div>
+    		
+    	</nav>
     </div>
     <div class="page-sidebar" role="complementary"> 
     	<aside id="text-2" class="widget widget_text">
