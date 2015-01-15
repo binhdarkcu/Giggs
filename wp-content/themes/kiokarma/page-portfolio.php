@@ -10,7 +10,7 @@
       <article id="post-12" class="post-12 page type-page status-publish hentry">
         <div class="post-content"></div>
       </article>
-      <div id="filter" class="filter-area"><span>Filter:</span><span><a href="#" class="active" value="*">All</a></span><span><a href="#" value=".animation">Animation</a></span><span><a href="#" value=".branding">Branding</a></span><span><a href="#" value=".print-design">Print Design</a></span><span><a href="#" value=".video">Video</a></span></div>
+      
       <?php get_template_part('tpl','portfolio');?>
     </div>
   </main>
