@@ -197,6 +197,9 @@ button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type=
 		position: relative;
 		top: 2px;
 	}
+	.page .page-title, .page .page-subtitle{
+		width:80%;
+	}
 	#aboutPage .service h3{
 		font-size: 26px;
 	}
