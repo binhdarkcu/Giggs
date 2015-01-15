@@ -146,7 +146,7 @@ d[0].offsetTop||15===d[0].offsetTop;d.remove();a.fixedPosition=e}f.extend(b.defa
 
 	"use strict";
 
-	$( '.site-navigation a' ).on( 'click', function( e ) {
+	$( '.site-navigation a, .page-navigation .page-numbers' ).on( 'click', function( e ) {
 		var link = $( this ).attr( 'href' );
 
 		if ( $( this ).attr( 'target' ) != '_blank' && link.indexOf( '.jpg' ) < 0 && link.indexOf( '.jpeg' ) < 0 && link.indexOf( '.png' ) < 0 && link.indexOf( '.gif' ) < 0 && link.indexOf( '#' ) < 0 ) {

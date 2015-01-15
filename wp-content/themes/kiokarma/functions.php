@@ -30,6 +30,9 @@
 	//change label post
 	include 'inc/change_label_post.php';
 	
+	//paging blog
+	include 'inc/page_nav.php';
+	
 	//cache function
 	include TEMPLATEPATH .'/inc/disk_cached.php' ;
 	

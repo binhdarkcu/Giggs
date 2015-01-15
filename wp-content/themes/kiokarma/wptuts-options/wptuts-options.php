@@ -109,6 +109,7 @@
       		update_option( 'url_linkin',($_POST['url_linkin']));
       		update_option( 'url_flickr',($_POST['url_flickr']));
 			update_option( 'url_skype',($_POST['url_skype']));
+			update_option( 'url_instagram',($_POST['url_instagram']));
 			
     ?>
       		<div id="index_message" name="index_message" class="updated" style="display:table;width: 100%;margin-bottom: 0;">Update successful!</div><br/>
@@ -147,6 +148,9 @@
 	                   <label for="url_skype">Skype</label><br/>
 	                   <input name="url_skype" size="65" style="border-style:inset;border-width: 2px;color: #000;background-color: #f1f1f1" value="<?php echo esc_attr( get_option('url_skype') ); ?>"/><br /><br />	
 	                    <!--Summary fr-->
+	                    <label for="url_instagram">Instagram</label><br/>
+	                   <input name="url_instagram" size="65" style="border-style:inset;border-width: 2px;color: #000;background-color: #f1f1f1" value="<?php echo esc_attr( get_option('url_instagram') ); ?>"/><br /><br />
+	                    
 	                   <input type="submit" name="footer_submit" value="Update" style="" class="button-primary"/>
 	                   
 	            

@@ -56,7 +56,8 @@ button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type=
 }
 .site-logo{
 	display: inline-block;
-	
+	width: 205px;
+	margin-top: -17px;
 	a{
 		
 		img{
@@ -185,9 +186,17 @@ button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type=
 .gestaltenBox, .indexbookBox{
 	display: none;
 }
-
+.single-blog .page-header .page-title{
+	text-transform: none;
+	width: 75%;
+}
 
 @media only screen and (max-width: 980px){
+	.site-logo{
+		margin-top: 0;
+		position: relative;
+		top: 2px;
+	}
 	#aboutPage .service h3{
 		font-size: 26px;
 	}
