@@ -12,7 +12,7 @@
 			$args_blog = array(
 				'post_type' 	 => 'blogs',
 				'posts_per_page' =>  3 ,
-				'order'			 => 'asc',
+				'order'			 => 'DESC',
 				'paged'		=> $paged
 			);
 			query_posts( $args_blog );

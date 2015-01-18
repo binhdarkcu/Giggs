@@ -40,13 +40,21 @@ function list_portfolio(){
 	$query_portfolio = get_posts($args_portfolio);
 	$i = 0;
 	$j = 1;
+	
     foreach ( $query_portfolio as $portfolio ) {
     	$category = get_the_category($portfolio->ID);
 		$cat_slug=  $category[0]->slug;
-		//print_r($cat_slug);
+		
+		$strCat = '';	
+		$length = count($category);
+		for($i = 0; $i < $length; $i++){
+			$strCat .= $category[$i]->slug.' ';
+		}
+		
+		
 		$url = wp_get_attachment_image_src( get_post_thumbnail_id($portfolio->ID), 'large' );
 ?>
-        <article id="post-<?php echo $portfolio->ID; ?>" class="post-<?php echo $portfolio->ID; ?> project type-project status-publish has-post-thumbnail hentry <?php echo $cat_slug; ?> has-post-content" >
+        <article id="post-<?php echo $portfolio->ID; ?>" class="post-<?php echo $portfolio->ID; ?> project type-project status-publish has-post-thumbnail hentry <?php echo $strCat; ?> has-post-content" >
           <div class="project-thumbnail"> <a href="<?php echo get_the_permalink($portfolio->ID); ?>"> <img src="<?php echo $url[0]; ?>" class="attachment-project wp-post-image" alt="<?php echo get_the_title($portfolio->ID); ?>"> </a></div>
         </article>
 <?php		
