@@ -193,19 +193,18 @@ button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type=
 .about-page .page-title{
 	width: 70%;
 }
-.about-page .page-title p{
+.about-page .page-title{
 	font-family: 'Roboto Condensed', sans-serif;
-	font-size: 55px;	
+	font-size: 4.538em;	
 	font-weight: 700;
-	line-height: 55px;
+	line-height: 1;
 }
 .about-page .page-subtitle{
 	font-family: 'PT Serif', serif;
-	font-size: 14px;
-	margin-top: 19px;
+	font-size: 1.385em;
 }
 .about-page .aboutPage .col-1{
-	width: 470px;
+	width: 50%;
 	float: left;
 }
 .about-page .aboutPage .col-1 img{
@@ -213,19 +212,19 @@ button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type=
 }
 .about-page .aboutPage .col-2{
 	float: left;
-	width: 430px;
+	width: 48%;
 	padding-left: 35px;
 }
 .about-page .aboutPage .col-2 h3{
 	font-family: 'Roboto Condensed', sans-serif;
 	font-weight: 700;
-	font-size: 22px;
+	font-size: 2.154em;
 }
 .about-page .aboutPage .col-2 p{
 	font-family: 'Roboto Condensed', sans-serif;
 	font-weight: 400;
-	font-size: 14px;
-	line-height: 16px;
+	font-size: 1.238em;
+	line-height: 1.1;
 }
 .about-page .aboutPage .col-2 p a{
 	color: #000;
@@ -240,6 +239,15 @@ button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type=
 		margin-top: 0;
 		position: relative;
 		top: 2px;
+	}
+	.about-page .page-title{
+		font-size: 55px;
+	}
+	.about-page .aboutPage .col-2 h3{
+		font-size: 28px;
+	}
+	.about-page .aboutPage .col-2 p{
+		font-size: 14px;
 	}
 	.page .page-title, .page .page-subtitle{
 		width:80%;
@@ -282,5 +290,38 @@ button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type=
 	}
 	#aboutPage .service.hasImg.normal{
 		display: none;
+	}
+}
+
+@media only screen and (max-width: 767px){
+	.about-page .page-title{
+		width :100%;
+		font-size: 47px;
+	}
+	.about-page .page-subtitle{
+		font-size: 16px;
+	}
+	.about-page .aboutPage .col-1,.about-page .aboutPage .col-2{
+		width: 100%;
+	}
+	.about-page .aboutPage .col-2{
+		padding-left: 0;
+		padding-top: 32px;
+	}
+}
+@media only screen and (max-width: 479px){
+	.about-page .page-title{
+		width :100%;
+		font-size: 47px;
+	}
+	.about-page .page-subtitle{
+		font-size: 16px;
+	}
+	.about-page .aboutPage .col-1,.about-page .aboutPage .col-2{
+		width: 100%;
+	}
+	.about-page .aboutPage .col-2{
+		padding-left: 0;
+		padding-top: 32px;
 	}
 }

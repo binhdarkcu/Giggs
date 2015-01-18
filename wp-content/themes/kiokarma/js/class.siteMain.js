@@ -3,19 +3,15 @@ var siteMain = (function() {
 	//PARAMATER
 	var setting = {
 		font	:	13,
-		w		:	1600
+		w		:	1180
 	};
 	var s = '';
 	//INIT
 	function init(){
-		if(jQuery(window).width()>980){
-			respone();	
-		}
+		respone();
 		jQuery(window).resize(function(){
 			responsiveAbout();
-			if(jQuery(window).width()>980){
-				respone();	
-			}
+			respone();
 		});
 		
 	}
@@ -40,7 +36,7 @@ var siteMain = (function() {
 	function respone(){
 		var w = jQuery(window).width();
 		setting.font = (w*13)/setting.w;
-		jQuery('#aboutPage .service').css('font-size', setting.font + 'px' );
+		jQuery('.about-page').css('font-size', setting.font + 'px' );
 	}
 	//FUNCTIONS
 	function responsiveAbout(){

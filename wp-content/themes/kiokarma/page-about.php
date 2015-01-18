@@ -34,22 +34,12 @@
 				</div>
 				<div class="col-2">
 					<div class="pad">
-						<h3>About Yves Faes-Dupont</h3>
-						<p>
-							More than anything else Yves is a creative and gets to the core of what you, or your business are about to deliver you the media that puts the best of it on display.<br/>
-							Primarily designing logos, brand identities, print materials and interactive, he’s always up for a challenge.
-						</p>
-						<p>
-							With +10 years of experience in design he’s had the privilege to work with and for the finest people, agencies and brands in the business, which didn’t go unnoticed. His work has been featured in design books like 
-							<a class="gestaltenLink">Supersonic of Gestalten Verlag</a> and <a class="indexbookLink">Indexbook of Around Europe.</a>
-						</p>
-						<p>
-							You can contact me for …<br/>
-							<i>logo design/corporate ID/print design/visual identity/website and application design and development/video post- and production</i>
-						</p>
-						<p>
-							If you’re looking for a design studio that will push you and your company, drop him a  line, send him a letter or try smoke-signaling.
-						</p>
+						<?php
+							while ( have_rows('text_left_image_right') ) : the_row();
+							$text = get_sub_field("text_column_left_right");
+							echo $text;
+							endwhile;
+						?>
 					</div>
 				</div>
 				<?php }?>
