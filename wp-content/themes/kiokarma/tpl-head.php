@@ -14,6 +14,7 @@
 <?php echo $iMobile == TRUE ? '<meta name="viewport" content="width=600" />':'' ?>
 <?php echo $iPad == TRUE ? '<meta name="viewport" content="width=device-width, initial-scale=1">':'' ?>
 <link rel="stylesheet" id="google-fonts-css" href="http://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic|PT+Serif:400italic,700italic&amp;subset=latin,latin-ext" type="text/css" media="all">
+<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400italic,700,400' rel='stylesheet' type='text/css'>
 
 <link rel="stylesheet" type="text/css" href="css/custom.css" media="all">
 <link rel="stylesheet" type="text/css" href="css/style.css" media="all">
