@@ -33,4 +33,5 @@
 	var isDesktop = <?php echo $isDesktop == TRUE ? 'true':'false' ?>;
 	var iSingle = <?php echo (is_single()) ? 'true':'false';?>;
 </script>
+<?php wp_head();?>
 </head>
