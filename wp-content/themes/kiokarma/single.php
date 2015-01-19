@@ -46,6 +46,14 @@
     			<?php echo $port_projects;?>
     		</div>
     	</aside>
+    	<aside id="recent_projects-3" class="widget widget_recent_projects">
+    		<div class="textwidget">
+    			<?php if(!empty($port_projectlink)) {?>
+				<a target="_blank" class="launch" href="<?php echo $port_projectlink;?>">Launch Project</a>
+				<?php }?>
+    		</div>
+    	</aside>
+    	
     </div>
   </main>
   <?php endwhile; ?>
