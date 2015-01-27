@@ -1,3 +1,62 @@
+.ssba img
+{ 
+width: 55px;
+padding: 6px;
+border: 0;
+box-shadow: none !important;
+display: inline;
+vertical-align: middle;
+}
+
+.ssba, .ssba a	
+{
+	font-family: Indie Flower;
+	font-size: 20px;
+	text-decoration: none;
+	clear: both;
+	margin-top: 20px;
+}
+
+.ssba_sharecount:after, .ssba_sharecount:before {
+	right: 100%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+.ssba_sharecount:after {
+	border-color: rgba(224, 221, 221, 0);
+	border-right-color: #f5f5f5;
+	border-width: 5px;
+	top: 50%;
+	margin-top: -5px;
+}
+.ssba_sharecount:before {
+	border-color: rgba(85, 94, 88, 0);
+	border-right-color: #e0dddd;
+	border-width: 6px;
+	top: 50%;
+	margin-top: -6px;
+}
+.ssba_sharecount {
+	font: 11px Arial, Helvetica, sans-serif;
+	
+	padding: 5px;
+	-khtml-border-radius: 6px;
+	-o-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	position: relative;
+	border: 1px solid #e0dddd;color: #555e58;
+		background: #f5f5f5;
+	}
+	.ssba_sharecount:after {
+		border-right-color: #f5f5f5;
+	}
+
 .wp-video, .wp-video-shortcode {
   max-width: 100%;
   width: 100%!important;
@@ -195,13 +254,13 @@ button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type=
 }
 .about-page .page-title{
 	font-family: 'Roboto Condensed', sans-serif;
-	font-size: 4.538em;	
+	font-size: 60px;	
 	font-weight: 700;
-	line-height: 1;
+	line-height: 0.9;
 }
 .about-page .page-subtitle{
 	font-family: 'PT Serif', serif;
-	font-size: 1.385em;
+	font-size: 18px;
 }
 .about-page .aboutPage .col-1{
 	width: 50%;
@@ -218,13 +277,16 @@ button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type=
 .about-page .aboutPage .col-2 h3{
 	font-family: 'Roboto Condensed', sans-serif;
 	font-weight: 700;
-	font-size: 2.154em;
+	font-size: 20px;
+	line-height: 1;
+	margin-bottom: 20px;
 }
 .about-page .aboutPage .col-2 p{
 	font-family: 'Roboto Condensed', sans-serif;
 	font-weight: 400;
-	font-size: 1.238em;
-	line-height: 1.1;
+	font-size: 16px;
+	line-height: 1.2;
+	margin-bottom: 20px;
 }
 .about-page .aboutPage .col-2 p a{
 	color: #000;

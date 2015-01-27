@@ -11,7 +11,8 @@ var siteMain = (function() {
 		respone();
 		jQuery(window).resize(function(){
 			responsiveAbout();
-			respone();
+			siteMain.responsiveHome();
+			//respone();
 		});
 		
 	}
@@ -46,6 +47,9 @@ var siteMain = (function() {
 			jQuery('#service_text_mobile_1').html(jQuery('#service_text_mobile_2').html());
 		}
 	}
+	function responsiveHome(){
+		jQuery('.portfolio-area .type-project').height(jQuery('.portfolio-area .type-project .project-thumbnail').height());	
+	}
 	
 	function calHeightContact(){
 		jQuery('#sidebar .bgwhite').height(jQuery('.page .contactPage #primary').height() + 230);
@@ -55,7 +59,8 @@ var siteMain = (function() {
 		init:init,
 		responsiveAbout:responsiveAbout,
 		openLightBox:openLightBox,
-		calHeightContact:calHeightContact
+		calHeightContact:calHeightContact,
+		responsiveHome:responsiveHome
 	};
 	
 })();	
@@ -65,7 +70,8 @@ jQuery(document).ready(function(){
 });
 jQuery(window).load(function(){
 	siteMain.responsiveAbout();
-	siteMain.calHeightContact();
+	//siteMain.calHeightContact();
+	siteMain.responsiveHome();
 	siteMain.openLightBox();
 	if(iSingle){
 		jQuery('.main-navigation ul li.portfolio_single, #footer-navigation ul li.portfolio_single').addClass('current-menu-item');
