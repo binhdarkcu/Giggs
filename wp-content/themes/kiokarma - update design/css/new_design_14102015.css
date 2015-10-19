@@ -126,14 +126,13 @@
 
 .filter-area .active:after{
 	content: "";
-    background: #5e4c31;
-    left: 0;
-    width: 100%;
-    top: auto;
-    margin: 0;
-    bottom: -7px;
-    height: 4px;
-    
+	background: #b08d56;
+	left: 0;
+	width: 100%;
+	top: auto;
+	margin: 0;
+	bottom: -7px;
+	height: 4px;
 }
 .filter-area a:after{
 	content: "";
@@ -215,7 +214,10 @@
 	margin-top: 10px;
 }
 .about-page .page-content{
-	padding-top: 75px;
+	padding-top: 72px;
+}
+.about-page .page-header{
+	    padding: 134px 0;
 }
 .bgBannerTop.bannerSingle{
 	height: 130px;
@@ -227,10 +229,11 @@
 }
 .page-header-single .page-subtitle{
 	font-family: 'PT Serif', serif;
-    font-weight: 400;
-    color: #222;
-    margin-top: 10px;
-    font-style: italic;
+	font-weight: 400;
+	color: #222;
+	margin-top: 10px;
+	font-style: italic;
+	font-size: 16px;
 }
 .page-header-single .page-title{
 	font-family: 'Oswald', sans-serif;
@@ -297,6 +300,11 @@ padding-bottom: 23px;
 .bgBannerTop.bannerContact{
 	height: 432px;
 	overflow: hidden;
+}
+.bgBannerTop.bannerContact .bgBanner{
+	background: url(../images/banner-contact.jpg) no-repeat;
+	min-height: 432px;
+
 }
 .contactPage .page-header .page-subtitle{
 	margin-top: 8px;
@@ -392,6 +400,9 @@ padding-top: 26px;
 	.about-page .page-title{
 		font-size: 56px;
     	line-height: 1.3;
+	}
+	.project-navigation-right{
+		
 	}
 }
 @media only screen and (max-width: 768px){
