@@ -2,7 +2,7 @@
 <html lang="en-US" class="">
 <head>
 <meta charset="UTF-8">
-<link rel="shortcut icon" href="images/favicon.ico?v=3">
+<link rel="shortcut icon" href="images/favicon.ico?v=4">
 <title><?php echo get_bloginfo('name')?> | <?php echo get_bloginfo('description')?></title>
 <?php
 	//contact

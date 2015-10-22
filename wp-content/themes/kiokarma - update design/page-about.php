@@ -40,13 +40,27 @@
 				</div>
 				<div class="col-2">
 					<div class="pad">
+						<p>I have always divided my time spent on work between working closely with personal clients and doing freelance design work for agencies. For my personal clients, it ranged from B2B to sports brands and the music industry, for whom I was able to do projects ranging from logo design all the way down to their website. Since i approach graphic design in its boradest sense I am able to make sure the clients communication and media are consisten and keep the same feel throughout the different media, whether its print or web. As a freelancer I started back when webdesign was still in its early stages and i was privileged to work for the some of the biggest agenciues in de international advertising industry.</p>
+<p>Good graphic design for me is storytelling, a story&nbsp;between content and form, without content, form is useless.</p>
+<p>With +10 years of experience in design I’ve had the privilege to work with and for the finest people, agencies and brands in the business, which didn’t go unnoticed. Some of my work has been featured in design books like&nbsp;<a class="gestaltenLink">Supersonic of Gestalten Verlag</a>&nbsp;and&nbsp;<a class="indexbookLink">Indexbook of Around Europe.</a></p>
+<h3 class="h3title">AGENCIES/COMPANIES WORKED FOR</h3>
+<p>Levi’s Europe / Ogilvy Worldwide / Duval Guillaume / Happiness Brussels / BBDO / Saatchi &amp; Saarchi / Bliss Interactive / Beyondsnow / Fuel / Mortier Brigade</p>
+<h3 class="h3title">BRANDS WORKED FOR ON FREELANCE BASIS</h3>
+<p>Toyota / Schweppes / NIVEA / Lexus / Beyondsnow / Deutsche Bank / Nikon / Bacardi / Martini and many more</p>
+<h3 class="h3title">CURRENT LOCATION</h3>
+<p>Bali – Indonesia</p>
+<p class="line-1" style="display: none;">You can contact me for …<br>
+logo design/corporate ID/print design/visual identity/website and application design and development/video post- and production</p>
+<p class="line-2">
+					</p></div>
+					<!--div class="pad">
 						<?php
-							while ( have_rows('text_left_image_right') ) : the_row();
+							//while ( have_rows('text_left_image_right') ) : the_row();
 							$text = get_sub_field("text_column_left_right");
-							echo $text;
-							endwhile;
+							//echo $text;
+							//endwhile;
 						?>
-					</div>
+					</div-->
 				</div>
 				<?php }?>
 			</div>

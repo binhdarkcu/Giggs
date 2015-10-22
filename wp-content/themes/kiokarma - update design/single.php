@@ -36,14 +36,8 @@
     			<?php echo $port_clients;?>
 			</div> 
     	</aside>
-    	<aside id="recent_projects-2" class="widget widget_recent_projects">
-    		<h6 class="widget-title">Project	</h6>
-            <div class="textwidget desc">
-                <?php echo $description;?>
-            </div>
-    		
-    	</aside>
-        <aside class="widget">
+        <aside id="recent_projects-2" class="widget widget_recent_projects">
+            <h6 class="widget-title">Project    </h6>
             <div class="textwidget">
                 <?php echo $port_projects;?>
             </div>

@@ -6,7 +6,13 @@
   <?php get_template_part('tpl','header');?>
   <main class="site-main" role="main">
     <div class="page-header">
-      <h1 class="page-title"><?php echo get_option('text_for_homepage'); ?>	</h1>
+      <h1 class="page-title">
+        <?php //echo get_option('text_for_homepage'); ?>	
+        
+        <span>WELCOME TO THE PORTFOLIO </span>
+        <span>OF FREELANCE DESIGNER</span>
+        <span>YVES FAES-DUPONT</span> 
+      </h1>
       <div class="page-subtitle">Currently available for select projects, collaborations and consulting.</div>
     </div>
     <div class="page-content">

@@ -18,10 +18,14 @@
 			$linkvine = (get_option('url_vine') != '') ? get_option('url_vine') : 'javascript:void(0);';
 			$linkvine = (get_option('url_instagram') != '') ? get_option('url_instagram') : 'javascript:void(0);';
 		?>
-		<a target="_blank" href="<?php echo $linkin;?>"><i class="si-linkedin"></i></a>
-    	<a target="_blank" href="<?php echo $linkbe;?>"><i class="si-behance"></i></a>
-    	<a target="_blank" href="<?php echo $linkflickr;?>"><i class="si-flickr"></i></a>
-    	<a target="_blank" href="<?php echo $linkvine;?>"><i class="si-instagram"></i></a>
-    	<a target="_blank" href="<?php echo $linkv;?>"><i class="si-vimeo"></i></a>
+		<a target="_blank" href="<?php echo $linkin;?>">
+      <i class="si-linkedin">
+        <img src="images/likedin.png"/>
+      </i>
+    </a>
+    	<a target="_blank" href="<?php echo $linkbe;?>"><i class="si-behance"><img src="images/be.png"/></i></a>
+    	<a target="_blank" href="<?php echo $linkflickr;?>"><i class="si-flickr"><img src="images/dot.png"/></i></a>
+    	<a target="_blank" href="<?php echo $linkvine;?>"><i class="si-instagram"><img src="images/instagram.png"/></i></a>
+    	<a target="_blank" href="<?php echo $linkv;?>"><i class="si-vimeo"><img src="images/v.png"/></i></a>
     </div>
   </header>

@@ -1,11 +1,15 @@
   <footer class="site-footer" role="contentinfo">
     <div class="site">
       <div class="site-copyright">
-        <p>Skype: <a href="skype:<?php echo $linkskype;?>?chat" class="nickskye"><span>yvesfaesdupont</span></a><br>
-          E-mail: <?php $linkemail= (get_option('url_email') != '') ? get_option('url_email')  : 'javascript:void(0);';?>
-  			<a href="mailto:<?php echo $linkemail;?>"><?php echo $linkemail;?></a>
+        <p>
+          Email: <?php $linkemail= (get_option('url_email') != '') ? get_option('url_email')  : 'javascript:void(0);';?>
+          <a style="text-decoration: underline;" href="mailto:<?php echo $linkemail;?>"><?php echo $linkemail;?></a>
+          <br>
+          Skype: <a href="skype:<?php echo $linkskype;?>?chat" class="nickskye"><span>yvesfaesdupont</span></a>
+          
+  			
   		<br>
-  		<span class="spanCopy">© 2014 Kiokarma - Yves Faes-Dupont</span>
+  		<span class="spanCopy">© 2015 Yves Faes-Dupont</span>
          </p>
       </div>
     </div>
