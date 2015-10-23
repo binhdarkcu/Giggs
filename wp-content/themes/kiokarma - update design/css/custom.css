@@ -283,6 +283,7 @@ button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type=
 	font-size: 16px;
 	line-height: 1.2;
 	margin-bottom: 20px;
+	color: #222;
 }
 .about-page .aboutPage .col-2 p a{
 	color: #000;

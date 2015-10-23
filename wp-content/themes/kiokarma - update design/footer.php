@@ -5,6 +5,7 @@
           Email: <?php $linkemail= (get_option('url_email') != '') ? get_option('url_email')  : 'javascript:void(0);';?>
           <a style="text-decoration: underline;" href="mailto:<?php echo $linkemail;?>"><?php echo $linkemail;?></a>
           <br>
+          <?php $linkskype= (get_option('url_skype') != '') ? get_option('url_skype')  : 'javascript:void(0);';?>
           Skype: <a href="skype:<?php echo $linkskype;?>?chat" class="nickskye"><span>yvesfaesdupont</span></a>
           
   			

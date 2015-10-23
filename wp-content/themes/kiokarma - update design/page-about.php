@@ -67,7 +67,7 @@ logo design/corporate ID/print design/visual identity/website and application de
 		</div><!-- end #content -->
 		
         	<p><br></p>
-        	<h6 class="h6Client">Clients</h6>
+        	<h6 class="h6Client h6titleclient">Clients</h6>
         	<div id="gallery-1" class="gallery galleryid-105 gallery-columns-7 gallery-size-full">
         		<?php
 					$args_dribble = array(

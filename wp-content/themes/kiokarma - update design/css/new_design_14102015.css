@@ -21,13 +21,14 @@
 	z-index: 2;
 }
 .bgBannerTop .bgBanner{
-	background: url(../images/banner-home.jpg) no-repeat;
+	background: url(../images/banner-home.jpg) no-repeat top center;
 	background-size: cover;
 	min-height: 620px;
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
+	background-attachment: fixed;
 }
 .page-title{
 	width: 100%!important;
@@ -258,6 +259,9 @@
 	color: #222;
 	line-height: 1.2;
 }
+.page-sidebar .textwidget p{
+	color: #222;
+}
 .page-sidebar .widget{
 	margin-bottom: 22px;
 }
@@ -358,6 +362,22 @@ padding: 0;
     background: #b08d56;
     text-transform: uppercase;
     padding: 10px 42px;
+    transition: 0.3s all;
+}
+.contactPage .contact-form-submit input[type="submit"]:hover{
+	background: #222;
+}
+.contactPage .wpcf7-form.sent{
+	display: none;
+}
+.contactPage .wpcf7-form .row, .contactPage .wpcf7-form .areaRow{
+	margin-bottom: 24px;
+}
+.contactPage  .screen-reader-response{
+	font-family: 'Roboto Condensed', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #222;
 }
 .contact-sidebar .widget_text .widget-title{
 	font-family: 'Roboto Condensed', sans-serif;
@@ -407,15 +427,22 @@ padding-top: 26px;
     width: 20px;
 }
 .about-page .aboutPage .col-2 p{
-	font-size: 18px;
+	font-size: 17px;
 }
 .about-page .aboutPage .col-2 p a{
-	font-size: 18px;
+	font-size: 17px;
 	color: #b08d56;
 }
 .about-page .aboutPage .col-2 .h3title{
 	margin-bottom: 2px;
-	font-size: 18px; 
+	font-size: 17px; 
+}
+.h6titleclient {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    color: #222;
+    text-transform: uppercase;
 }
 .singlePage .page-header-single .page-title{
 	text-transform: uppercase;
