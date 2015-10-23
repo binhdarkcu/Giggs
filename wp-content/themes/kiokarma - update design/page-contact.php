@@ -31,3 +31,47 @@
   </main>
 </div>
 <?php get_footer();?>  
+<script type="text/javascript" src="js/jquery.validate.js"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        jQuery.validator.addMethod('selectcheck', function (value) {
+            return (value != '0');
+        }, "");
+
+        jQuery("#contact form.wpcf7-form").validate({
+            rules: {
+                'your-name': {
+                    required: true
+                },
+                'your-email': {
+                    required: true,
+                    email: true
+                },
+                'your-message': {
+                    required: true
+                }
+            },
+
+            errorPlacement: function(error, element){},
+            highlight: function(element) {
+                //console.log(element);
+                if(jQuery(element).is(':checkbox'))
+                {
+                    var name = $(element).attr('name');
+                    jQuery('input[name='+name+']').addClass('error');
+                }
+                else
+                {
+                    jQuery(element).addClass('error');
+                }
+            },
+            unhighlight: function(element, errorClass, validClass) {
+                jQuery(element).removeClass(errorClass).addClass(validClass); // remove error class from elements/add valid class
+                
+            },
+            submitHandler: function(form) {
+                form.submit();
+            },
+        });
+    });
+</script>

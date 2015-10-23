@@ -258,6 +258,7 @@
 	font-size: 16px;
 	color: #222;
 	line-height: 1.2;
+	font-weight: 400;
 }
 .page-sidebar .textwidget p{
 	color: #222;
@@ -349,6 +350,11 @@ padding: 0;
     font-weight: 400;
     font-size: 16px;
 }
+.contactPage .contact-area input[type="text"].error,
+.contactPage .contact-area input[type="email"].error,
+.contactPage .contact-area textarea.error{
+	border-color: red;
+}
 .contactPage textarea{
 	border: 1px solid #e2e2e2;
 	font-weight: 400;
@@ -377,12 +383,23 @@ padding: 0;
 	font-family: 'Roboto Condensed', sans-serif;
     font-size: 18px;
     font-weight: 400;
+    padding-bottom: 20px;
     color: #222;
 }
+.contactPage  .screen-reader-response ul{
+	display: none;
+}
+.contactPage .wpcf7-not-valid-tip{
+	display: none;
+}
+
 .contact-sidebar .widget_text .widget-title{
 	font-family: 'Roboto Condensed', sans-serif;
     font-size: 18px;
     font-weight: 700;
+}
+.wpcf7-response-output.wpcf7-validation-errors{
+	display: none;
 }
 .contact-sidebar .widget_text .emaillink{
 
