@@ -67,32 +67,7 @@ logo design/corporate ID/print design/visual identity/website and application de
 		</div><!-- end #content -->
 		
         	<p><br></p>
-        	<h6 class="h6Client h6titleclient">Clients</h6>
-        	<div id="gallery-1" class="gallery galleryid-105 gallery-columns-7 gallery-size-full">
-        		<?php
-					$args_dribble = array(
-						'post_type' 	 => 'dribble-footer',
-						'posts_per_page' =>  8,
-						'order'			 => 'asc'
-					);
-					$query_dribbles = get_posts($args_dribble);
-					foreach ( $query_dribbles as $dribble ) {
-					$img_id = get_post_meta( $dribble->ID, 'tt_dribble_image',true);  				
-					$img_url=wp_get_attachment_image_src( $img_id, 'full' );
-					$link = get_post_meta($dribble->ID, 'tt_dribble_link',true);
-					if(empty($link)){
-						$link = "javascript:void(0);";
-					}
-				?>
-				<figure class="gallery-item">
-        			<div class="gallery-icon landscape"> 
-        				<img width="140" height="60" src="<?php echo $img_url[0];?>" class="attachment-full" alt="c1">
-        			</div>
-        		</figure>
-				
-				<?php }?>
-        		
-        	</div>
+        	
       </article>
     </div>
     <div class="gestaltenBox">

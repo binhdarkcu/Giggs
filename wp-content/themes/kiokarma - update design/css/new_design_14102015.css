@@ -152,6 +152,7 @@
     background: #0a0a0a;
     padding: 70px 0;
     color: #fff;
+        border-top: 1px solid #505050;
     font-style: italic;
 }
 .site-footer a{
